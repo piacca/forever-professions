@@ -132,6 +132,9 @@ def load_credentials():
         with open(path, encoding="utf-8") as f:
             c = json.load(f)
         cid, sec = c.get("client_id"), c.get("client_secret")
+    # Pasted secrets often pick up spaces, quotes or a trailing newline.
+    cid = (cid or "").strip().strip('"').strip()
+    sec = (sec or "").strip().strip('"').strip()
     if not cid or not sec:
         sys.exit("No credentials. Set BLIZZARD_CLIENT_ID / BLIZZARD_CLIENT_SECRET, or create "
                  "blizzard_credentials.json in the project folder (see the top of this file).")
@@ -139,7 +142,14 @@ def load_credentials():
 
 
 def get_token(oauth_url, cid, sec):
-    j, _ = http_json(oauth_url, basic=f"{cid}:{sec}", data={"grant_type": "client_credentials"})
+    try:
+        j, _ = http_json(oauth_url, basic=f"{cid}:{sec}", data={"grant_type": "client_credentials"})
+    except ApiError as e:
+        if " 401 " in f" {e} ":
+            raise ApiError("Blizzard rejected the client ID/secret (401). Check that BLIZZARD_CLIENT_ID and "
+                           "BLIZZARD_CLIENT_SECRET match your client at develop.battle.net/access/clients "
+                           "and aren't swapped.") from None
+        raise
     if "access_token" not in j:
         raise ApiError("Token response had no access_token")
     return j["access_token"]

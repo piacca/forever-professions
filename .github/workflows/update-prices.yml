@@ -53,9 +53,17 @@ jobs:
           BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
           BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
         run: |
+          failed=0
           for house in 113 114 120 124; do
-            python tools/fetch_ah_prices.py --house "$house" || echo "::warning::House $house failed; keeping its previous prices"
+            if ! python tools/fetch_ah_prices.py --house "$house"; then
+              echo "::warning::House $house failed; keeping its previous prices"
+              failed=$((failed + 1))
+            fi
           done
+          if [ "$failed" -eq 4 ]; then
+            echo "::error::Every house failed, so nothing was updated. See the errors above (often the Blizzard secrets)."
+            exit 1
+          fi
 
       - name: Save sales-tracking state
         if: env.HAS_KEYS == 'true'
