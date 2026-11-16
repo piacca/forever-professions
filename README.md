@@ -14,6 +14,7 @@ Open `index.html` in a browser. Everything is in that one file, and nothing to i
 - **Skill-ups:** the orange, yellow, green and grey skill levels for every recipe, for planning your leveling
 - **Learned from:** how you get each recipe (trainer, automatic, vendor, reputation with faction and standing, Merchant's Favor cost, boss or world drop, quest), plus whether the recipe item is **BoP** or **BoE** (tradeable, so you can buy it on the AH)
 - **Click a recipe** to see each reagent's cost and where the price comes from (AH, vendor, or cheaper to craft), how to learn the recipe, and its skill-up colors
+- **Click an item name** to open its Wowhead Forever page in a new tab
 - **Hover an item** for an in-game style tooltip with its stats, effects, sell price, current AH price, and how many are listed
 - **Thin markets** are flagged when 3 or fewer of an item are listed, since one listing can make a profit look much bigger than it is
 - **Settings:** AH cut, "I gather my own herbs", and backup

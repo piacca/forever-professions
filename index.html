@@ -105,7 +105,8 @@ td.dim{opacity:.5}
 .pill.lf-ven{color:#a8e3a0;border-color:rgba(90,214,90,.4)}.pill.lf-drop{color:#9cc8ff;border-color:rgba(58,150,255,.45)}
 .pill.lf-q{color:#ffe08a;border-color:rgba(255,209,0,.35)}.pill.lf-new{color:var(--muted);border-style:dashed}
 .q0{color:var(--q0)}.q1{color:var(--ink)}.q2{color:var(--q2)}.q3{color:var(--q3)}.q4{color:var(--q4)}.q5{color:var(--q5)}
-[data-tt]{cursor:help;text-decoration:underline dotted color-mix(in srgb,currentColor 40%,transparent);text-underline-offset:3px}
+a[data-tt],a.q1{text-decoration-line:underline}
+[data-tt]{cursor:pointer;text-decoration:underline dotted color-mix(in srgb,currentColor 40%,transparent);text-underline-offset:3px}
 .hint{color:var(--muted);font-size:13px;margin:10px 2px 0}
 a{color:var(--gold)}
 
@@ -177,7 +178,7 @@ footer p{margin:4px 0;max-width:90ch}
     <th data-k="vendor" class="num">Vendor</th><th data-k="profit" class="num">Profit / craft</th>
     <th data-k="margin" class="num">Margin</th>
   </tr></thead><tbody></tbody></table></div>
-  <p class="hint">Click a row to see the recipe, how to learn it and what that costs, and where each reagent price comes from. Profit is per craft, after the auction house cut, using whichever is better: selling on the AH or to a vendor.</p>
+  <p class="hint">Click an item name to open it on Wowhead (on a phone: tap once for the tooltip, again for Wowhead). Click elsewhere in a row to see the recipe, how to learn it and what that costs, and where each reagent price comes from. Profit is per craft, after the auction house cut, using whichever is better: selling on the AH or to a vendor.</p>
 </section>
 
 <!-- SETTINGS -->
@@ -232,9 +233,10 @@ let S;
 function uid(){return Math.random().toString(36).slice(2,10)}
 function norm(s){return String(s).toLowerCase().replace(/[\[\]]/g,"").replace(/[^a-z0-9]/g,"")}
 function parseReagents(str){return str.split(";").map(x=>x.trim()).filter(Boolean).map(x=>{const m=x.match(/^(\d+(?:\.\d+)?)\s+(.+)$/);return {qty:+m[1],item:m[2].trim()}})}
-const TT={};for(const [id,name,type,vbuy,vsell,q,tt] of FOREVER_DATA.items)TT[norm(name)]={q,tt};
+const TT={};for(const [id,name,type,vbuy,vsell,q,tt] of FOREVER_DATA.items)TT[norm(name)]={id,q,tt};
+function whUrl(name){const t=TT[norm(name)];return t?.id?`https://www.wowhead.com/forever/item=${t.id}`:`https://www.wowhead.com/forever/search?q=${encodeURIComponent(name)}`}
 function qcls(name){const t=TT[norm(name)];return t?"q"+t.q:""}
-function ttName(name,label){return `<span data-tt="${esc(name)}" class="${qcls(name)}">${esc(label??name)}</span>`}
+function ttName(name,label){return `<a href="${whUrl(name)}" target="_blank" rel="noopener" data-tt="${esc(name)}" class="${qcls(name)}">${esc(label??name)}</a>`}
 function defaults(){
   const items={};
   for(const [id,name,type,vbuy,vsell] of FOREVER_DATA.items)items[norm(name)]={id,name,type,ah:null,vbuy,vsell,updated:null};
@@ -313,7 +315,7 @@ function renderProfit(){renderCats();
     if(a.profit!=null)profitCell=money(a.profit);
     else if(!r.output&&a.rc.complete)profitCell=`<span class="muted" title="Enchants are applied to gear, so there's no item to sell. Charge at least the reagent cost.">enchant</span>`;
     else{const miss=[...a.rc.missing];if(r.output){const o=item(r.output);if(!o||(o.ah==null&&o.vsell==null))miss.push(r.output+" (sale price)")}profitCell=`<span class="warnt" title="Missing: ${esc(miss.join(", "))}">needs ${miss.length} price${miss.length>1?"s":""}</span>`}
-    let html=`<tr data-id="${r.id}" style="cursor:pointer"><td>${r.output?ttName(r.output,r.name):esc(r.name)}${r.yield!=1?` <span class="muted small">×${r.yield}</span>`:""}</td><td>${esc(r.cat||"")}</td>
+    let html=`<tr data-id="${r.id}" style="cursor:pointer"><td>${r.output?ttName(r.output,r.name):`<a href="${whUrl(r.name)}" target="_blank" rel="noopener" class="q1" title="Search Wowhead">${esc(r.name)}</a>`}${r.yield!=1?` <span class="muted small">×${r.yield}</span>`:""}</td><td>${esc(r.cat||"")}</td>
       <td class="num">${r.skill!=null?(r.skillEst?`<span class="muted" title="${esc(estNote(r))}">≈${r.skill}</span>`:r.skill):'<span class="muted" title="Not known yet">?</span>'}</td>
       <td class="sku">${skuHtml(r)}</td>
       <td>${learnCell(r)}</td>
@@ -331,6 +333,7 @@ function renderProfit(){renderCats();
 }
 document.querySelector("#profit-table thead").addEventListener("click",e=>{const k=e.target.dataset.k;if(!k)return;if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=["name","prof","cat","skill","learn"].includes(k)?1:-1}renderProfit()});
 document.querySelector("#profit-table tbody").addEventListener("click",e=>{
+  if(e.target.closest("a"))return;
   const tr=e.target.closest("tr[data-id]");if(!tr)return;openRow=openRow===tr.dataset.id?null:tr.dataset.id;renderProfit()});
 ["f-search","f-cat","f-min","f-max","f-complete"].forEach(id=>document.getElementById(id).addEventListener("input",renderProfit));
 
@@ -412,10 +415,10 @@ document.addEventListener("pointerdown",e=>{lastPtr=e.pointerType});
 document.addEventListener("pointerover",e=>{if(e.pointerType==="touch")return;const el=e.target.closest("[data-tt]");if(el)showTip(el.dataset.tt,e.clientX,e.clientY)});
 document.addEventListener("pointermove",e=>{if(e.pointerType!=="touch"&&!tip.hidden)placeTip(e.clientX,e.clientY)});
 document.addEventListener("pointerout",e=>{if(e.pointerType==="touch")return;const el=e.target.closest("[data-tt]");if(el&&!el.contains(e.relatedTarget))hideTip()});
-// Touch: tap an item name inside an opened recipe to see its tooltip; tap anywhere else to close it.
+// Touch: first tap on an item name shows its tooltip, a second tap opens Wowhead; tapping elsewhere closes it.
 document.addEventListener("click",e=>{
-  if(lastPtr!=="touch")return;const el=e.target.closest(".detail [data-tt]");
-  if(el){e.stopPropagation();const b=el.getBoundingClientRect();if(tipFor===el.dataset.tt&&!tip.hidden)hideTip();else showTip(el.dataset.tt,b.left,b.bottom)}else hideTip();
+  if(lastPtr!=="touch")return;const el=e.target.closest("[data-tt]");
+  if(el){e.stopPropagation();if(tipFor===el.dataset.tt&&!tip.hidden){hideTip();return}e.preventDefault();const b=el.getBoundingClientRect();showTip(el.dataset.tt,b.left,b.bottom)}else hideTip();
 },true);
 addEventListener("scroll",()=>{if(lastPtr==="touch")hideTip()},{passive:true});
 
