@@ -1,0 +1,1754 @@
+{
+"source": "npm package wow-classic-items@2.0.1 (Classic Era createdBy.requiredSkill)",
+"skills": {
+"118": {
+"Alchemy": 1
+},
+"858": {
+"Alchemy": 55
+},
+"929": {
+"Alchemy": 110
+},
+"1251": {
+"First Aid": 1
+},
+"1710": {
+"Alchemy": 155
+},
+"2454": {
+"Alchemy": 1
+},
+"2457": {
+"Alchemy": 50
+},
+"2455": {
+"Alchemy": 25
+},
+"2458": {
+"Alchemy": 50
+},
+"2456": {
+"Alchemy": 40
+},
+"2459": {
+"Alchemy": 60
+},
+"2569": {
+"Tailoring": 65
+},
+"2572": {
+"Tailoring": 40
+},
+"2570": {
+"Tailoring": 1
+},
+"2575": {
+"Tailoring": 40
+},
+"2580": {
+"Tailoring": 60
+},
+"2576": {
+"Tailoring": 1
+},
+"2578": {
+"Tailoring": 70
+},
+"2579": {
+"Tailoring": 70
+},
+"2577": {
+"Tailoring": 40
+},
+"2582": {
+"Tailoring": 85
+},
+"2583": {
+"Tailoring": 95
+},
+"2568": {
+"Tailoring": 10
+},
+"2581": {
+"First Aid": 40
+},
+"2584": {
+"Tailoring": 75
+},
+"2585": {
+"Tailoring": 105
+},
+"2587": {
+"Tailoring": 100
+},
+"2844": {
+"Blacksmithing": 15
+},
+"2847": {
+"Blacksmithing": 25
+},
+"2845": {
+"Blacksmithing": 20
+},
+"2848": {
+"Blacksmithing": 110
+},
+"2852": {
+"Blacksmithing": 1
+},
+"2851": {
+"Blacksmithing": 35
+},
+"2850": {
+"Blacksmithing": 120
+},
+"2849": {
+"Blacksmithing": 115
+},
+"2853": {
+"Blacksmithing": 1
+},
+"2854": {
+"Blacksmithing": 90
+},
+"2862": {
+"Blacksmithing": 1
+},
+"2857": {
+"Blacksmithing": 70
+},
+"2865": {
+"Blacksmithing": 105
+},
+"2864": {
+"Blacksmithing": 80
+},
+"2866": {
+"Blacksmithing": 105
+},
+"2868": {
+"Blacksmithing": 120
+},
+"2871": {
+"Blacksmithing": 125
+},
+"2870": {
+"Blacksmithing": 145
+},
+"2863": {
+"Blacksmithing": 65
+},
+"2869": {
+"Blacksmithing": 130
+},
+"2996": {
+"Tailoring": 1
+},
+"2997": {
+"Tailoring": 75
+},
+"3239": {
+"Blacksmithing": 1
+},
+"3240": {
+"Blacksmithing": 65
+},
+"3241": {
+"Blacksmithing": 125
+},
+"3386": {
+"Alchemy": 120
+},
+"3382": {
+"Alchemy": 15
+},
+"3384": {
+"Alchemy": 110
+},
+"3385": {
+"Alchemy": 120
+},
+"3383": {
+"Alchemy": 90
+},
+"3387": {
+"Alchemy": 250
+},
+"3388": {
+"Alchemy": 125
+},
+"3390": {
+"Alchemy": 140
+},
+"3389": {
+"Alchemy": 130
+},
+"3391": {
+"Alchemy": 150
+},
+"3469": {
+"Blacksmithing": 20
+},
+"3471": {
+"Blacksmithing": 35
+},
+"3472": {
+"Blacksmithing": 40
+},
+"3473": {
+"Blacksmithing": 45
+},
+"3470": {
+"Blacksmithing": 25
+},
+"3474": {
+"Blacksmithing": 60
+},
+"3478": {
+"Blacksmithing": 75
+},
+"3481": {
+"Blacksmithing": 125
+},
+"3482": {
+"Blacksmithing": 130
+},
+"3480": {
+"Blacksmithing": 110
+},
+"3483": {
+"Blacksmithing": 135
+},
+"3484": {
+"Blacksmithing": 145
+},
+"3485": {
+"Blacksmithing": 150
+},
+"3488": {
+"Blacksmithing": 35
+},
+"3486": {
+"Blacksmithing": 125
+},
+"3487": {
+"Blacksmithing": 95
+},
+"3489": {
+"Blacksmithing": 70
+},
+"3490": {
+"Blacksmithing": 125
+},
+"3492": {
+"Blacksmithing": 145
+},
+"3491": {
+"Blacksmithing": 130
+},
+"3530": {
+"First Aid": 80
+},
+"3531": {
+"First Aid": 115
+},
+"3577": {
+"Mining": 155,
+"Alchemy": 225
+},
+"3824": {
+"Alchemy": 165
+},
+"3823": {
+"Alchemy": 165
+},
+"3825": {
+"Alchemy": 175
+},
+"3826": {
+"Alchemy": 180
+},
+"3827": {
+"Alchemy": 160
+},
+"3829": {
+"Alchemy": 200
+},
+"3828": {
+"Alchemy": 195
+},
+"3846": {
+"Blacksmithing": 185
+},
+"3837": {
+"Blacksmithing": 190
+},
+"3835": {
+"Blacksmithing": 165
+},
+"3836": {
+"Blacksmithing": 170
+},
+"3840": {
+"Blacksmithing": 160
+},
+"3841": {
+"Blacksmithing": 175
+},
+"3847": {
+"Blacksmithing": 200
+},
+"3842": {
+"Blacksmithing": 155
+},
+"3845": {
+"Blacksmithing": 195
+},
+"3844": {
+"Blacksmithing": 180
+},
+"3843": {
+"Blacksmithing": 170
+},
+"3848": {
+"Blacksmithing": 105
+},
+"3850": {
+"Blacksmithing": 175
+},
+"3849": {
+"Blacksmithing": 160
+},
+"3851": {
+"Blacksmithing": 155
+},
+"3853": {
+"Blacksmithing": 180
+},
+"3852": {
+"Blacksmithing": 170
+},
+"3855": {
+"Blacksmithing": 185
+},
+"3856": {
+"Blacksmithing": 200
+},
+"3854": {
+"Blacksmithing": 200
+},
+"3928": {
+"Alchemy": 215
+},
+"4241": {
+"Tailoring": 95
+},
+"4238": {
+"Tailoring": 45
+},
+"4240": {
+"Tailoring": 80
+},
+"4245": {
+"Tailoring": 150
+},
+"4308": {
+"Tailoring": 60
+},
+"4311": {
+"Tailoring": 100
+},
+"4307": {
+"Tailoring": 35
+},
+"4309": {
+"Tailoring": 70
+},
+"4315": {
+"Tailoring": 120
+},
+"4312": {
+"Tailoring": 80
+},
+"4310": {
+"Tailoring": 85
+},
+"4305": {
+"Tailoring": 125
+},
+"4314": {
+"Tailoring": 110
+},
+"4316": {
+"Tailoring": 110
+},
+"4313": {
+"Tailoring": 95
+},
+"4318": {
+"Tailoring": 130
+},
+"4321": {
+"Tailoring": 140
+},
+"4317": {
+"Tailoring": 125
+},
+"4320": {
+"Tailoring": 125
+},
+"4323": {
+"Tailoring": 170
+},
+"4322": {
+"Tailoring": 165
+},
+"4319": {
+"Tailoring": 145
+},
+"4335": {
+"Tailoring": 185
+},
+"4328": {
+"Tailoring": 180
+},
+"4324": {
+"Tailoring": 150
+},
+"4326": {
+"Tailoring": 185
+},
+"4327": {
+"Tailoring": 200
+},
+"4332": {
+"Tailoring": 135
+},
+"4329": {
+"Tailoring": 200
+},
+"4333": {
+"Tailoring": 155
+},
+"4331": {
+"Tailoring": 125
+},
+"4330": {
+"Tailoring": 110
+},
+"4334": {
+"Tailoring": 170
+},
+"4336": {
+"Tailoring": 200
+},
+"4339": {
+"Tailoring": 175
+},
+"4344": {
+"Tailoring": 1
+},
+"4343": {
+"Tailoring": 30
+},
+"4325": {
+"Tailoring": 175
+},
+"4596": {
+"Alchemy": 50
+},
+"4623": {
+"Alchemy": 215
+},
+"5542": {
+"Tailoring": 90
+},
+"5540": {
+"Blacksmithing": 110
+},
+"5541": {
+"Blacksmithing": 140
+},
+"5633": {
+"Alchemy": 175
+},
+"5634": {
+"Alchemy": 150
+},
+"5631": {
+"Alchemy": 60
+},
+"5765": {
+"Tailoring": 185
+},
+"5764": {
+"Tailoring": 175
+},
+"5762": {
+"Tailoring": 70
+},
+"5766": {
+"Tailoring": 135
+},
+"5763": {
+"Tailoring": 115
+},
+"5770": {
+"Tailoring": 150
+},
+"5996": {
+"Alchemy": 90
+},
+"5997": {
+"Alchemy": 1
+},
+"6041": {
+"Blacksmithing": 190
+},
+"6037": {
+"Mining": 230,
+"Alchemy": 225
+},
+"6048": {
+"Alchemy": 135
+},
+"6042": {
+"Blacksmithing": 150
+},
+"6040": {
+"Blacksmithing": 185
+},
+"6043": {
+"Blacksmithing": 165
+},
+"6050": {
+"Alchemy": 190
+},
+"6051": {
+"Alchemy": 100
+},
+"6052": {
+"Alchemy": 190
+},
+"6049": {
+"Alchemy": 165
+},
+"6149": {
+"Alchemy": 205
+},
+"6214": {
+"Blacksmithing": 65
+},
+"6240": {
+"Tailoring": 55
+},
+"6242": {
+"Tailoring": 70
+},
+"6238": {
+"Tailoring": 30
+},
+"6239": {
+"Tailoring": 55
+},
+"6241": {
+"Tailoring": 30
+},
+"6263": {
+"Tailoring": 100
+},
+"6264": {
+"Tailoring": 115
+},
+"6338": {
+"Blacksmithing": 100
+},
+"6350": {
+"Blacksmithing": 95
+},
+"6372": {
+"Alchemy": 100
+},
+"6370": {
+"Alchemy": 80
+},
+"6371": {
+"Alchemy": 130
+},
+"6384": {
+"Tailoring": 120
+},
+"6385": {
+"Tailoring": 120
+},
+"6450": {
+"First Aid": 150
+},
+"6451": {
+"First Aid": 180
+},
+"6452": {
+"First Aid": 80
+},
+"6453": {
+"First Aid": 130
+},
+"6662": {
+"Alchemy": 90
+},
+"6731": {
+"Blacksmithing": 100
+},
+"6786": {
+"Tailoring": 40
+},
+"6787": {
+"Tailoring": 110
+},
+"6796": {
+"Tailoring": 175
+},
+"6795": {
+"Tailoring": 160
+},
+"7052": {
+"Tailoring": 175
+},
+"7026": {
+"Tailoring": 15
+},
+"7053": {
+"Tailoring": 175
+},
+"7046": {
+"Tailoring": 140
+},
+"7051": {
+"Tailoring": 170
+},
+"7049": {
+"Tailoring": 150
+},
+"7047": {
+"Tailoring": 145
+},
+"7054": {
+"Tailoring": 190
+},
+"7048": {
+"Tailoring": 145
+},
+"7056": {
+"Tailoring": 180
+},
+"7055": {
+"Tailoring": 175
+},
+"7058": {
+"Tailoring": 185
+},
+"7057": {
+"Tailoring": 180
+},
+"7050": {
+"Tailoring": 160
+},
+"7062": {
+"Tailoring": 195
+},
+"7061": {
+"Tailoring": 195
+},
+"7059": {
+"Tailoring": 190
+},
+"7060": {
+"Tailoring": 190
+},
+"7063": {
+"Tailoring": 205
+},
+"7064": {
+"Tailoring": 210
+},
+"7065": {
+"Tailoring": 165
+},
+"7068": {
+"Alchemy": 300
+},
+"7071": {
+"Blacksmithing": 150
+},
+"7078": {
+"Alchemy": 275
+},
+"7076": {
+"Alchemy": 275
+},
+"7080": {
+"Alchemy": 275
+},
+"7082": {
+"Alchemy": 275
+},
+"7166": {
+"Blacksmithing": 30
+},
+"7914": {
+"Blacksmithing": 160
+},
+"7915": {
+"Blacksmithing": 175
+},
+"7916": {
+"Blacksmithing": 180
+},
+"7917": {
+"Blacksmithing": 185
+},
+"7918": {
+"Blacksmithing": 205
+},
+"7913": {
+"Blacksmithing": 160
+},
+"7919": {
+"Blacksmithing": 205
+},
+"7920": {
+"Blacksmithing": 210
+},
+"7922": {
+"Blacksmithing": 215
+},
+"7924": {
+"Blacksmithing": 215
+},
+"7929": {
+"Blacksmithing": 230
+},
+"7928": {
+"Blacksmithing": 225
+},
+"7927": {
+"Blacksmithing": 220
+},
+"7937": {
+"Blacksmithing": 245
+},
+"7930": {
+"Blacksmithing": 230
+},
+"7926": {
+"Blacksmithing": 220
+},
+"7931": {
+"Blacksmithing": 230
+},
+"7932": {
+"Blacksmithing": 235
+},
+"7934": {
+"Blacksmithing": 245
+},
+"7933": {
+"Blacksmithing": 235
+},
+"7935": {
+"Blacksmithing": 240
+},
+"7936": {
+"Blacksmithing": 245
+},
+"7939": {
+"Blacksmithing": 245
+},
+"7938": {
+"Blacksmithing": 225
+},
+"7941": {
+"Blacksmithing": 210
+},
+"7942": {
+"Blacksmithing": 220
+},
+"7943": {
+"Blacksmithing": 225
+},
+"7944": {
+"Blacksmithing": 240
+},
+"7945": {
+"Blacksmithing": 230
+},
+"7954": {
+"Blacksmithing": 235
+},
+"7957": {
+"Blacksmithing": 130
+},
+"7947": {
+"Blacksmithing": 255
+},
+"7946": {
+"Blacksmithing": 245
+},
+"7955": {
+"Blacksmithing": 30
+},
+"7956": {
+"Blacksmithing": 125
+},
+"7959": {
+"Blacksmithing": 250
+},
+"7964": {
+"Blacksmithing": 200
+},
+"7963": {
+"Blacksmithing": 200
+},
+"7958": {
+"Blacksmithing": 135
+},
+"7961": {
+"Blacksmithing": 245
+},
+"7966": {
+"Blacksmithing": 200
+},
+"7967": {
+"Blacksmithing": 215
+},
+"7960": {
+"Blacksmithing": 260
+},
+"7969": {
+"Blacksmithing": 235
+},
+"7965": {
+"Blacksmithing": 200
+},
+"7921": {
+"Blacksmithing": 210
+},
+"8544": {
+"First Aid": 210
+},
+"8545": {
+"First Aid": 240
+},
+"8827": {
+"Alchemy": 400
+},
+"8949": {
+"Alchemy": 185
+},
+"8956": {
+"Alchemy": 205
+},
+"8951": {
+"Alchemy": 195
+},
+"9036": {
+"Alchemy": 210
+},
+"9060": {
+"Blacksmithing": 200
+},
+"9088": {
+"Alchemy": 240
+},
+"9030": {
+"Alchemy": 215
+},
+"9061": {
+"Alchemy": 210
+},
+"9144": {
+"Alchemy": 225
+},
+"9154": {
+"Alchemy": 230
+},
+"9149": {
+"Alchemy": 225
+},
+"9206": {
+"Alchemy": 245
+},
+"9155": {
+"Alchemy": 235
+},
+"9210": {
+"Alchemy": 245
+},
+"9172": {
+"Alchemy": 235
+},
+"9187": {
+"Alchemy": 240
+},
+"9197": {
+"Alchemy": 240
+},
+"9179": {
+"Alchemy": 235
+},
+"9224": {
+"Alchemy": 250
+},
+"9233": {
+"Alchemy": 250
+},
+"9264": {
+"Alchemy": 250
+},
+"9366": {
+"Blacksmithing": 205
+},
+"10001": {
+"Tailoring": 210
+},
+"9998": {
+"Tailoring": 205
+},
+"9999": {
+"Tailoring": 205
+},
+"10002": {
+"Tailoring": 210
+},
+"10003": {
+"Tailoring": 215
+},
+"10004": {
+"Tailoring": 215
+},
+"10008": {
+"Tailoring": 215
+},
+"10027": {
+"Tailoring": 230
+},
+"10007": {
+"Tailoring": 215
+},
+"10018": {
+"Tailoring": 225
+},
+"10009": {
+"Tailoring": 215
+},
+"10026": {
+"Tailoring": 230
+},
+"10025": {
+"Tailoring": 245
+},
+"10023": {
+"Tailoring": 225
+},
+"10019": {
+"Tailoring": 225
+},
+"10021": {
+"Tailoring": 225
+},
+"10029": {
+"Tailoring": 235
+},
+"10030": {
+"Tailoring": 240
+},
+"10024": {
+"Tailoring": 230
+},
+"10033": {
+"Tailoring": 240
+},
+"10031": {
+"Tailoring": 240
+},
+"10028": {
+"Tailoring": 235
+},
+"10034": {
+"Tailoring": 240
+},
+"10035": {
+"Tailoring": 245
+},
+"10036": {
+"Tailoring": 250
+},
+"10040": {
+"Tailoring": 250
+},
+"10042": {
+"Tailoring": 225
+},
+"10044": {
+"Tailoring": 245
+},
+"10041": {
+"Tailoring": 250
+},
+"10045": {
+"Tailoring": 1
+},
+"10046": {
+"Tailoring": 20
+},
+"10047": {
+"Tailoring": 75
+},
+"10053": {
+"Tailoring": 235
+},
+"10048": {
+"Tailoring": 120
+},
+"10050": {
+"Tailoring": 225
+},
+"10052": {
+"Tailoring": 220
+},
+"10051": {
+"Tailoring": 235
+},
+"10054": {
+"Tailoring": 230
+},
+"10055": {
+"Tailoring": 235
+},
+"10056": {
+"Tailoring": 215
+},
+"10421": {
+"Blacksmithing": 1
+},
+"10423": {
+"Blacksmithing": 155
+},
+"10592": {
+"Alchemy": 200
+},
+"11128": {
+"Blacksmithing": 150
+},
+"11144": {
+"Blacksmithing": 200
+},
+"11608": {
+"Blacksmithing": 265
+},
+"11607": {
+"Blacksmithing": 275
+},
+"11604": {
+"Blacksmithing": 285
+},
+"11606": {
+"Blacksmithing": 270
+},
+"11605": {
+"Blacksmithing": 280
+},
+"12190": {
+"Alchemy": 230
+},
+"12259": {
+"Blacksmithing": 180
+},
+"12260": {
+"Blacksmithing": 190
+},
+"12360": {
+"Alchemy": 275
+},
+"12404": {
+"Blacksmithing": 250
+},
+"12406": {
+"Blacksmithing": 250
+},
+"12408": {
+"Blacksmithing": 255
+},
+"12405": {
+"Blacksmithing": 250
+},
+"12409": {
+"Blacksmithing": 280
+},
+"12410": {
+"Blacksmithing": 280
+},
+"12415": {
+"Blacksmithing": 270
+},
+"12414": {
+"Blacksmithing": 300
+},
+"12416": {
+"Blacksmithing": 260
+},
+"12418": {
+"Blacksmithing": 285
+},
+"12417": {
+"Blacksmithing": 295
+},
+"12420": {
+"Blacksmithing": 300
+},
+"12419": {
+"Blacksmithing": 290
+},
+"12422": {
+"Blacksmithing": 300
+},
+"12425": {
+"Blacksmithing": 270
+},
+"12424": {
+"Blacksmithing": 265
+},
+"12428": {
+"Blacksmithing": 265
+},
+"12426": {
+"Blacksmithing": 295
+},
+"12427": {
+"Blacksmithing": 295
+},
+"12429": {
+"Blacksmithing": 300
+},
+"12610": {
+"Blacksmithing": 300
+},
+"12612": {
+"Blacksmithing": 300
+},
+"12611": {
+"Blacksmithing": 300
+},
+"12613": {
+"Blacksmithing": 300
+},
+"12614": {
+"Blacksmithing": 300
+},
+"12618": {
+"Blacksmithing": 300
+},
+"12620": {
+"Blacksmithing": 300
+},
+"12619": {
+"Blacksmithing": 300
+},
+"12625": {
+"Blacksmithing": 290
+},
+"12631": {
+"Blacksmithing": 290
+},
+"12633": {
+"Blacksmithing": 300
+},
+"12640": {
+"Blacksmithing": 300
+},
+"12639": {
+"Blacksmithing": 300
+},
+"12644": {
+"Blacksmithing": 250
+},
+"12643": {
+"Blacksmithing": 250
+},
+"12645": {
+"Blacksmithing": 275
+},
+"12774": {
+"Blacksmithing": 275
+},
+"12773": {
+"Blacksmithing": 275
+},
+"12775": {
+"Blacksmithing": 280
+},
+"12776": {
+"Blacksmithing": 280
+},
+"12777": {
+"Blacksmithing": 280
+},
+"12782": {
+"Blacksmithing": 290
+},
+"12781": {
+"Blacksmithing": 285
+},
+"12783": {
+"Blacksmithing": 300
+},
+"12784": {
+"Blacksmithing": 300
+},
+"12794": {
+"Blacksmithing": 300
+},
+"12790": {
+"Blacksmithing": 300
+},
+"12792": {
+"Blacksmithing": 290
+},
+"12797": {
+"Blacksmithing": 300
+},
+"12796": {
+"Blacksmithing": 300
+},
+"12798": {
+"Blacksmithing": 300
+},
+"12803": {
+"Alchemy": 275
+},
+"12808": {
+"Alchemy": 275
+},
+"13445": {
+"Alchemy": 265
+},
+"13442": {
+"Alchemy": 255
+},
+"13444": {
+"Alchemy": 295
+},
+"13447": {
+"Alchemy": 270
+},
+"13443": {
+"Alchemy": 260
+},
+"13446": {
+"Alchemy": 275
+},
+"13423": {
+"Alchemy": 250
+},
+"13452": {
+"Alchemy": 280
+},
+"13453": {
+"Alchemy": 275
+},
+"13454": {
+"Alchemy": 285
+},
+"13456": {
+"Alchemy": 290
+},
+"13455": {
+"Alchemy": 280
+},
+"13458": {
+"Alchemy": 290
+},
+"13459": {
+"Alchemy": 290
+},
+"13457": {
+"Alchemy": 290
+},
+"13461": {
+"Alchemy": 290
+},
+"13462": {
+"Alchemy": 285
+},
+"13503": {
+"Alchemy": 300
+},
+"13506": {
+"Alchemy": 300
+},
+"13510": {
+"Alchemy": 300
+},
+"13511": {
+"Alchemy": 300
+},
+"13513": {
+"Alchemy": 300
+},
+"13512": {
+"Alchemy": 300
+},
+"13857": {
+"Tailoring": 260
+},
+"13856": {
+"Tailoring": 255
+},
+"13858": {
+"Tailoring": 260
+},
+"13864": {
+"Tailoring": 280
+},
+"13866": {
+"Tailoring": 295
+},
+"13860": {
+"Tailoring": 265
+},
+"13863": {
+"Tailoring": 275
+},
+"13868": {
+"Tailoring": 255
+},
+"13867": {
+"Tailoring": 300
+},
+"13871": {
+"Tailoring": 280
+},
+"13870": {
+"Tailoring": 265
+},
+"13865": {
+"Tailoring": 285
+},
+"13869": {
+"Tailoring": 255
+},
+"14042": {
+"Tailoring": 260
+},
+"14043": {
+"Tailoring": 270
+},
+"14044": {
+"Tailoring": 275
+},
+"14045": {
+"Tailoring": 280
+},
+"14046": {
+"Tailoring": 260
+},
+"14048": {
+"Tailoring": 250
+},
+"14100": {
+"Tailoring": 270
+},
+"14103": {
+"Tailoring": 275
+},
+"14101": {
+"Tailoring": 270
+},
+"14104": {
+"Tailoring": 290
+},
+"14107": {
+"Tailoring": 275
+},
+"14106": {
+"Tailoring": 300
+},
+"14108": {
+"Tailoring": 285
+},
+"14111": {
+"Tailoring": 290
+},
+"14112": {
+"Tailoring": 300
+},
+"14128": {
+"Tailoring": 300
+},
+"14134": {
+"Tailoring": 275
+},
+"14130": {
+"Tailoring": 300
+},
+"14132": {
+"Tailoring": 275
+},
+"14136": {
+"Tailoring": 285
+},
+"14138": {
+"Tailoring": 300
+},
+"14139": {
+"Tailoring": 300
+},
+"14137": {
+"Tailoring": 290
+},
+"14140": {
+"Tailoring": 300
+},
+"14141": {
+"Tailoring": 275
+},
+"14143": {
+"Tailoring": 265
+},
+"14142": {
+"Tailoring": 270
+},
+"14144": {
+"Tailoring": 290
+},
+"14146": {
+"Tailoring": 300
+},
+"14152": {
+"Tailoring": 300
+},
+"14155": {
+"Tailoring": 300
+},
+"14156": {
+"Tailoring": 300
+},
+"14153": {
+"Tailoring": 300
+},
+"14342": {
+"Tailoring": 250
+},
+"14530": {
+"First Aid": 290
+},
+"14529": {
+"First Aid": 260
+},
+"15802": {
+"Tailoring": 290
+},
+"15869": {
+"Blacksmithing": 100
+},
+"15870": {
+"Blacksmithing": 150
+},
+"15871": {
+"Blacksmithing": 200
+},
+"15872": {
+"Blacksmithing": 275
+},
+"16206": {
+"Blacksmithing": 275
+},
+"16979": {
+"Tailoring": 300
+},
+"16980": {
+"Tailoring": 300
+},
+"16988": {
+"Blacksmithing": 300
+},
+"16989": {
+"Blacksmithing": 295
+},
+"17013": {
+"Blacksmithing": 300
+},
+"17015": {
+"Blacksmithing": 300
+},
+"17014": {
+"Blacksmithing": 295
+},
+"17016": {
+"Blacksmithing": 300
+},
+"17193": {
+"Blacksmithing": 300
+},
+"17704": {
+"Blacksmithing": 190
+},
+"17708": {
+"Alchemy": 190
+},
+"17723": {
+"Tailoring": 190
+},
+"18253": {
+"Alchemy": 300
+},
+"18258": {
+"Tailoring": 285,
+"Leatherworking": 285
+},
+"18262": {
+"Blacksmithing": 300
+},
+"18263": {
+"Tailoring": 300
+},
+"18294": {
+"Alchemy": 215
+},
+"18405": {
+"Tailoring": 300
+},
+"18407": {
+"Tailoring": 300
+},
+"18409": {
+"Tailoring": 300
+},
+"18408": {
+"Tailoring": 300
+},
+"18413": {
+"Tailoring": 300
+},
+"18486": {
+"Tailoring": 300
+},
+"19047": {
+"Tailoring": 290
+},
+"19050": {
+"Tailoring": 300
+},
+"19051": {
+"Blacksmithing": 290
+},
+"19059": {
+"Tailoring": 300
+},
+"19056": {
+"Tailoring": 290
+},
+"19057": {
+"Blacksmithing": 300
+},
+"19148": {
+"Blacksmithing": 300
+},
+"19156": {
+"Tailoring": 300
+},
+"19165": {
+"Tailoring": 300
+},
+"19169": {
+"Blacksmithing": 300
+},
+"19164": {
+"Blacksmithing": 300
+},
+"19166": {
+"Blacksmithing": 300
+},
+"19167": {
+"Blacksmithing": 300
+},
+"19168": {
+"Blacksmithing": 300
+},
+"19170": {
+"Blacksmithing": 300
+},
+"19440": {
+"First Aid": 300
+},
+"19682": {
+"Tailoring": 300
+},
+"19683": {
+"Tailoring": 300
+},
+"19684": {
+"Tailoring": 300
+},
+"19690": {
+"Blacksmithing": 300
+},
+"19691": {
+"Blacksmithing": 300
+},
+"19692": {
+"Blacksmithing": 300
+},
+"19693": {
+"Blacksmithing": 300
+},
+"19694": {
+"Blacksmithing": 300
+},
+"19695": {
+"Blacksmithing": 300
+},
+"19931": {
+"Alchemy": 315
+},
+"20002": {
+"Alchemy": 275
+},
+"20004": {
+"Alchemy": 290
+},
+"20007": {
+"Alchemy": 275
+},
+"20008": {
+"Alchemy": 285
+},
+"20039": {
+"Blacksmithing": 300
+},
+"20538": {
+"Tailoring": 300
+},
+"20539": {
+"Tailoring": 300
+},
+"20537": {
+"Tailoring": 300
+},
+"20549": {
+"Blacksmithing": 300
+},
+"20550": {
+"Blacksmithing": 300
+},
+"20551": {
+"Blacksmithing": 300
+},
+"21154": {
+"Tailoring": 250
+},
+"21340": {
+"Tailoring": 260
+},
+"21341": {
+"Tailoring": 285
+},
+"21342": {
+"Tailoring": 300
+},
+"21542": {
+"Tailoring": 250
+},
+"21546": {
+"Alchemy": 250
+},
+"22191": {
+"Blacksmithing": 300
+},
+"22194": {
+"Blacksmithing": 300
+},
+"22195": {
+"Blacksmithing": 300
+},
+"22196": {
+"Blacksmithing": 300
+},
+"22197": {
+"Blacksmithing": 300
+},
+"22198": {
+"Blacksmithing": 300
+},
+"22246": {
+"Tailoring": 225
+},
+"22248": {
+"Tailoring": 275
+},
+"22249": {
+"Tailoring": 300
+},
+"22251": {
+"Tailoring": 275
+},
+"22252": {
+"Tailoring": 300
+},
+"22383": {
+"Blacksmithing": 300
+},
+"22384": {
+"Blacksmithing": 300
+},
+"22385": {
+"Blacksmithing": 300
+},
+"22652": {
+"Tailoring": 300
+},
+"22654": {
+"Tailoring": 300
+},
+"22655": {
+"Tailoring": 300
+},
+"22658": {
+"Tailoring": 300
+},
+"22660": {
+"Tailoring": 300
+},
+"22670": {
+"Blacksmithing": 300
+},
+"22669": {
+"Blacksmithing": 300
+},
+"22671": {
+"Blacksmithing": 300
+},
+"22756": {
+"Tailoring": 300
+},
+"22757": {
+"Tailoring": 300
+},
+"22758": {
+"Tailoring": 300
+},
+"6373": {
+"Alchemy": 140
+},
+"14154": {
+"Tailoring": 300
+},
+"34085": {
+"Tailoring": 250
+},
+"34087": {
+"Tailoring": 250
+}
+}
+}

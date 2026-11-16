@@ -1,0 +1,9 @@
+# Blizzard API keys: never commit these
+blizzard_credentials.json
+
+# Generated / local
+artifact.html
+data/item_ids.json
+__pycache__/
+*.pyc
+.DS_Store

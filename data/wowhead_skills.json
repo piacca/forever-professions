@@ -1,0 +1,584 @@
+{
+ "source": "Wowhead Forever trainer pages (Teaches tab): Rogvar, Doctor Herbert Halsey, Yelmak, Dr Martin Felben; pasted by user 2026-11-16",
+ "recipes": {
+  "Arcane Elixir": {
+   "profession": "Alchemy",
+   "skill": 235,
+   "colors": [
+    235,
+    250,
+    270,
+    290
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 11461,
+   "trainers": [
+    "Rogvar"
+   ]
+  },
+  "Blackmouth Oil": {
+   "profession": "Alchemy",
+   "skill": 80,
+   "colors": [
+    80,
+    80,
+    90,
+    100
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 7836,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Catseye Draught": {
+   "profession": "Alchemy",
+   "skill": 200,
+   "colors": [
+    200,
+    220,
+    240,
+    260
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 12609,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  },
+  "Cerulean Dye": {
+   "profession": "Alchemy",
+   "skill": 40,
+   "colors": [
+    40,
+    50,
+    70,
+    90
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 1249630,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak",
+    "Dr Martin Felben"
+   ]
+  },
+  "Draught of Detect Demon": {
+   "profession": "Alchemy",
+   "skill": 250,
+   "colors": [
+    250,
+    265,
+    285,
+    305
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 11478,
+   "trainers": [
+    "Rogvar"
+   ]
+  },
+  "Draught of Detect Undead": {
+   "profession": "Alchemy",
+   "skill": 230,
+   "colors": [
+    230,
+    245,
+    265,
+    285
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 11460,
+   "trainers": [
+    "Rogvar"
+   ]
+  },
+  "Draught of Greater Water Breathing": {
+   "profession": "Alchemy",
+   "skill": 215,
+   "colors": [
+    215,
+    230,
+    250,
+    270
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 22808,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  },
+  "Draught of Water Breathing": {
+   "profession": "Alchemy",
+   "skill": 90,
+   "colors": [
+    90,
+    120,
+    140,
+    160
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 7179,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Dreamless Sleep Potion": {
+   "profession": "Alchemy",
+   "skill": 230,
+   "colors": [
+    230,
+    245,
+    265,
+    285
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 15833,
+   "trainers": [
+    "Rogvar"
+   ]
+  },
+  "Elixir of Agility": {
+   "profession": "Alchemy",
+   "skill": 185,
+   "colors": [
+    185,
+    205,
+    225,
+    245
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 11449,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  },
+  "Elixir of Defense": {
+   "profession": "Alchemy",
+   "skill": 195,
+   "colors": [
+    195,
+    215,
+    235,
+    255
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 11450,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  },
+  "Elixir of Fire Power": {
+   "profession": "Alchemy",
+   "skill": 140,
+   "colors": [
+    140,
+    165,
+    185,
+    205
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 7845,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Elixir of Greater Agility": {
+   "profession": "Alchemy",
+   "skill": 240,
+   "colors": [
+    240,
+    255,
+    275,
+    295
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 11467,
+   "trainers": [
+    "Rogvar"
+   ]
+  },
+  "Elixir of Greater Intellect": {
+   "profession": "Alchemy",
+   "skill": 235,
+   "colors": [
+    235,
+    250,
+    270,
+    290
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 11465,
+   "trainers": [
+    "Rogvar"
+   ]
+  },
+  "Elixir of Lesser Defense": {
+   "profession": "Alchemy",
+   "skill": 130,
+   "colors": [
+    130,
+    155,
+    175,
+    195
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 3177,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Elixir of Lesser Fortitude": {
+   "profession": "Alchemy",
+   "skill": 175,
+   "colors": [
+    175,
+    195,
+    215,
+    235
+   ],
+   "source": "Drop, Trainer",
+   "wowhead_spell": 3450,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  },
+  "Elixir of Minor Fortitude": {
+   "profession": "Alchemy",
+   "skill": 50,
+   "colors": [
+    50,
+    80,
+    100,
+    120
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 2334,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak",
+    "Dr Martin Felben"
+   ]
+  },
+  "Elixir of Minor Strength": {
+   "profession": "Alchemy",
+   "skill": 15,
+   "colors": [
+    15,
+    55,
+    75,
+    95
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 2329,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak",
+    "Dr Martin Felben"
+   ]
+  },
+  "Elixir of Wisdom": {
+   "profession": "Alchemy",
+   "skill": 90,
+   "colors": [
+    90,
+    120,
+    140,
+    160
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 3171,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Fire Oil": {
+   "profession": "Alchemy",
+   "skill": 130,
+   "colors": [
+    130,
+    150,
+    160,
+    170
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 7837,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Greater Mana Potion": {
+   "profession": "Alchemy",
+   "skill": 205,
+   "colors": [
+    205,
+    220,
+    240,
+    260
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 11448,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  },
+  "Lesser Invisibility Potion": {
+   "profession": "Alchemy",
+   "skill": 165,
+   "colors": [
+    165,
+    185,
+    205,
+    225
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 3448,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  },
+  "Lesser Mana Potion": {
+   "profession": "Alchemy",
+   "skill": 120,
+   "colors": [
+    120,
+    145,
+    165,
+    185
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 3173,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Lesser Troll's Blood Elixir": {
+   "profession": "Alchemy",
+   "skill": 125,
+   "colors": [
+    125,
+    150,
+    170,
+    190
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 3176,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Magenta Dye": {
+   "profession": "Alchemy",
+   "skill": 120,
+   "colors": [
+    120,
+    130,
+    142,
+    155
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 1249631,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Mana Potion": {
+   "profession": "Alchemy",
+   "skill": 160,
+   "colors": [
+    160,
+    180,
+    200,
+    220
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 3452,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  },
+  "Mana Well": {
+   "profession": "Alchemy",
+   "skill": 20,
+   "colors": [
+    20,
+    20,
+    20,
+    20
+   ],
+   "source": "Quest, Trainer",
+   "wowhead_spell": 1230564,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak",
+    "Dr Martin Felben"
+   ]
+  },
+  "Minor Mana Potion": {
+   "profession": "Alchemy",
+   "skill": 25,
+   "colors": [
+    25,
+    65,
+    85,
+    105
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 2331,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak",
+    "Dr Martin Felben"
+   ]
+  },
+  "Minor Rejuvenation Potion": {
+   "profession": "Alchemy",
+   "skill": 40,
+   "colors": [
+    40,
+    70,
+    90,
+    110
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 2332,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak",
+    "Dr Martin Felben"
+   ]
+  },
+  "Minor Troll's Blood Elixir": {
+   "profession": "Alchemy",
+   "skill": 15,
+   "colors": [
+    15,
+    60,
+    80,
+    100
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 3170,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak",
+    "Dr Martin Felben"
+   ]
+  },
+  "Oil of Immolation": {
+   "profession": "Alchemy",
+   "skill": 205,
+   "colors": [
+    205,
+    220,
+    240,
+    260
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 11451,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  },
+  "Stonescale Oil": {
+   "profession": "Alchemy",
+   "skill": 250,
+   "colors": [
+    250,
+    250,
+    255,
+    260
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 17551,
+   "trainers": [
+    "Rogvar"
+   ]
+  },
+  "Sulfuric Acid": {
+   "profession": "Alchemy",
+   "skill": 40,
+   "colors": [
+    40,
+    50,
+    70,
+    90
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 1249633,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak",
+    "Dr Martin Felben"
+   ]
+  },
+  "Swim Speed Potion": {
+   "profession": "Alchemy",
+   "skill": 100,
+   "colors": [
+    100,
+    130,
+    150,
+    170
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 7841,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey",
+    "Yelmak"
+   ]
+  },
+  "Viridian Dye": {
+   "profession": "Alchemy",
+   "skill": 215,
+   "colors": [
+    215,
+    230,
+    250,
+    270
+   ],
+   "source": "Trainer",
+   "wowhead_spell": 1249632,
+   "trainers": [
+    "Rogvar",
+    "Doctor Herbert Halsey"
+   ]
+  }
+ }
+}

@@ -1,0 +1,438 @@
+{
+ "source": "Wowhead Forever Alchemy recipe tables (skill + source), pasted by user 2026-11-16",
+ "recipes": {
+  "Minor Arcane Elixir": {
+   "skill": 1,
+   "source": [
+    "Trainer"
+   ]
+  },
+  "Elixir of Minor Force": {
+   "skill": 1,
+   "source": [
+    "Trainer"
+   ]
+  },
+  "Elixir of Minor Spirit": {
+   "skill": 15,
+   "source": [
+    "Drop: Gnarlpine Gardener, Kul Tiras Sailor"
+   ]
+  },
+  "Minor Mageblood Elixir": {
+   "skill": 25,
+   "source": [
+    "Drop: Young Wendigo, Venture Co. Hireling"
+   ]
+  },
+  "Minor Cleric's Elixir": {
+   "skill": 45,
+   "source": [
+    "Drop: Vile Fin Attacker, Vile Fin Muckdweller, Murloc Forager"
+   ]
+  },
+  "Elixir of Lesser Spirit": {
+   "skill": 65,
+   "source": [
+    "Vendor: 45 Merchant's Favor"
+   ]
+  },
+  "Lesser Mageblood Elixir": {
+   "skill": 75,
+   "source": [
+    "Vendor: 45 Merchant's Favor"
+   ]
+  },
+  "Elixir of Lesser Intellect": {
+   "skill": 95,
+   "source": [
+    "Vendor: 45 Merchant's Favor"
+   ]
+  },
+  "Lesser Cleric's Elixir": {
+   "skill": 95,
+   "source": [
+    "Vendor: 45 Merchant's Favor"
+   ]
+  },
+  "Elixir of Spirit": {
+   "skill": 115,
+   "source": [
+    "Drop: Bloodfury Harpy"
+   ]
+  },
+  "Lesser Arcane Elixir": {
+   "skill": 120,
+   "source": [
+    "Vendor: 45 Merchant's Favor"
+   ]
+  },
+  "Elixir of Intellect": {
+   "skill": 135,
+   "source": [
+    "Drop: Galak Mauler"
+   ]
+  },
+  "Cleric's Elixir": {
+   "skill": 145,
+   "source": [
+    "Drop: Xavian Hellcaller"
+   ]
+  },
+  "Elixir of Fortitude": {
+   "skill": 150,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Elixir of Strength": {
+   "skill": 150,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Elixir of Greater Spirit": {
+   "skill": 165,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Friendly",
+    "Vendor: 120 Merchant's Favor"
+   ]
+  },
+  "Greater Mageblood Elixir": {
+   "skill": 175,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Friendly",
+    "Vendor: 120 Merchant's Favor"
+   ]
+  },
+  "Greater Cleric's Elixir": {
+   "skill": 195,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Friendly",
+    "Vendor: 120 Merchant's Favor"
+   ]
+  },
+  "Elixir of Greater Fortitude": {
+   "skill": 200,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Friendly",
+    "Vendor: 120 Merchant's Favor"
+   ]
+  },
+  "Elixir of the Phalanx": {
+   "skill": 250,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Elixir of Cunning": {
+   "skill": 275,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Elixir of Ferocity": {
+   "skill": 275,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Elixir of Sages": {
+   "skill": 275,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Elixir of the Whale": {
+   "skill": 275,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Elixir of the Owl": {
+   "skill": 280,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Elixir of Nature Power": {
+   "skill": 285,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Elixir of Wicked Regeneration": {
+   "skill": 285,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Elixir of the Grizzly": {
+   "skill": 300,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 240 Merchant's Favor"
+   ]
+  },
+  "Minor Mender's Potion": {
+   "skill": 30,
+   "source": [
+    "Drop: Gnarlpine Mystic, Tirisfal Farmer"
+   ]
+  },
+  "Minor Spellblasting Potion": {
+   "skill": 35,
+   "source": [
+    "Drop: Kobold Geomancer, Dustwind Harpy"
+   ]
+  },
+  "Minor Frenzy Potion": {
+   "skill": 40,
+   "source": [
+    "Drop: Hatescreech, Windfury Wind Witch, Bloodfeather Harpy"
+   ]
+  },
+  "Lesser Discolored Healing Potion": {
+   "skill": 55,
+   "source": [
+    "Special Trainer: Odd Child / Apothecary Renferrel"
+   ]
+  },
+  "Lesser Mender's Potion": {
+   "skill": 80,
+   "source": [
+    "Drop: Theramore Preserver, Stormscale Siren"
+   ]
+  },
+  "Lesser Spellblasting Potion": {
+   "skill": 85,
+   "source": [
+    "Drop: Witchwing Windcaller, Blackwood Totemic"
+   ]
+  },
+  "Lesser Frenzy Potion": {
+   "skill": 90,
+   "source": [
+    "Drop: Raging Rot Hide"
+   ]
+  },
+  "Discolored Healing Potion": {
+   "skill": 110,
+   "source": [
+    "Special Trainer: Odd Child / Apothecary Renferrel"
+   ]
+  },
+  "Mender's Potion": {
+   "skill": 130,
+   "source": [
+    "Vendor: 45 Merchant's Favor"
+   ]
+  },
+  "Spellblasting Potion": {
+   "skill": 135,
+   "source": [
+    "Vendor: 45 Merchant's Favor"
+   ]
+  },
+  "Frenzy Potion": {
+   "skill": 140,
+   "source": [
+    "Vendor: 45 Merchant's Favor"
+   ]
+  },
+  "Greater Discolored Healing Potion": {
+   "skill": 155,
+   "source": [
+    "Special Trainer: Odd Child / Apothecary Renferrel"
+   ]
+  },
+  "Disorienting Smog Potion": {
+   "skill": 180,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Friendly",
+    "Vendor: 120 Merchant's Favor"
+   ]
+  },
+  "Greater Spellblasting Potion": {
+   "skill": 185,
+   "source": [
+    "Quest: A New Need for Shadow Protection",
+    "Vendor: Gorhak - 15 Carved Centaur Totem",
+    "Vendor: Molkar - 60 Carved Centaur Totem"
+   ]
+  },
+  "Greater Mender's Potion": {
+   "skill": 180,
+   "source": [
+    "Trainer"
+   ]
+  },
+  "Greater Frenzy Potion": {
+   "skill": 190,
+   "source": [
+    "Quest: A New Need for Shadow Protection",
+    "Vendor: Gorhak - 15 Carved Centaur Totem",
+    "Vendor: Molkar - 60 Carved Centaur Totem"
+   ]
+  },
+  "Superior Discolored Healing Potion": {
+   "skill": 215,
+   "source": [
+    "Special Trainer: Odd Child / Apothecary Renferrel"
+   ]
+  },
+  "Superior Mender's Potion": {
+   "skill": 230,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Superior Spellblasting Potion": {
+   "skill": 235,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Superior Frenzy Potion": {
+   "skill": 240,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Dragonfire Potion": {
+   "skill": 245,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Friendly",
+    "Vendor: 120 Merchant's Favor"
+   ]
+  },
+  "Caustic Smog Potion": {
+   "skill": 265,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Potion of Venomous Blood": {
+   "skill": 275,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Major Mender's Potion": {
+   "skill": 280,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Potion of Beast Slaying": {
+   "skill": 280,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Potion of Elemental Purging": {
+   "skill": 280,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Major Spellblasting Potion": {
+   "skill": 285,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 180 Merchant's Favor"
+   ]
+  },
+  "Major Frenzy Potion": {
+   "skill": 290,
+   "source": [
+    "Unlock: Azeroth Commerce / Durotar Supply Honored",
+    "Vendor: 240 Merchant's Favor"
+   ]
+  },
+  "Cerulean Dye": {
+   "skill": 40,
+   "source": [
+    "Trainer"
+   ]
+  },
+  "Sulfuric Acid": {
+   "skill": 40,
+   "source": [
+    "Trainer"
+   ]
+  },
+  "Magenta Dye": {
+   "skill": 120,
+   "source": [
+    "Trainer"
+   ]
+  },
+  "Potion of Predatory Senses": {
+   "skill": 195,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Revealing Draught": {
+   "skill": 205,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Viridian Dye": {
+   "skill": 220,
+   "source": [
+    "Trainer"
+   ]
+  },
+  "Distilled Firewater": {
+   "skill": 250,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Transmute: Legionite": {
+   "skill": 275,
+   "source": [
+    "Unknown"
+   ]
+  },
+  "Alchemy Certification": {
+   "skill": 300,
+   "source": [
+    "Vendor: 1000 Merchant's Favor"
+   ]
+  },
+  "Mana Well": {
+   "skill": 20,
+   "source": [
+    "Trainer"
+   ]
+  },
+  "Fermenter": {
+   "skill": 140,
+   "source": [
+    "Drop: Rath'mael (Ruins of Lordaeron)"
+   ]
+  },
+  "Alchemy Laboratory": {
+   "skill": 300,
+   "source": [
+    "Unknown"
+   ]
+  }
+ }
+}
