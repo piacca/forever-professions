@@ -196,8 +196,6 @@ def collect_listings(auctions_json, kind, out, seen=None):
         qty = a.get("quantity") or 0
         if not item_id or qty <= 0:
             continue
-        if seen is not None and a.get("id") is not None:
-            seen[a["id"]] = [item_id, int(qty), a.get("time_left")]
         if kind == "commodity":
             unit = a.get("unit_price")
         else:
@@ -207,12 +205,19 @@ def collect_listings(auctions_json, kind, out, seen=None):
         if unit is None:  # bid-only listing: no usable asking price
             continue
         out.setdefault(item_id, []).append((float(unit), int(qty)))
+        if seen is not None and a.get("id") is not None:
+            seen[a["id"]] = [item_id, int(qty), a.get("time_left"), float(unit)]
 
 
 # Blizzard's API has no sales data. Estimate sales by comparing hourly snapshots: a listing that vanished while it
 # still had LONG/VERY_LONG time left was almost certainly bought (a few will be cancellations); a commodity
 # listing whose quantity dropped was partly bought.
 SALES_KEEP_DAYS = 7
+# Bump when the estimation rules change: older windows are discarded instead of mixed in.
+SALES_METHOD = 3
+# Buyers take the cheapest listings first; undercut sellers cancel listings that are no longer cheapest.
+# So a vanished listing only counts as sold if it was within the cheapest 25% of that item's supply.
+CHEAP_SHARE = 0.25
 
 
 def track_sales(seen, tracked_ids, house_id, now, last_modified=None):
@@ -222,11 +227,17 @@ def track_sales(seen, tracked_ids, house_id, now, last_modified=None):
     if os.path.exists(state_path):
         with open(state_path, encoding="utf-8") as fh:
             prev = json.load(fh)
-    hist = {"windows": []}
+    hist = {"method": SALES_METHOD, "windows": []}
     if os.path.exists(hist_path):
         with open(hist_path, encoding="utf-8") as fh:
             hist = json.load(fh)
     note = "first snapshot: sales estimates start with the next run (about an hour from now)"
+    if hist.get("method") != SALES_METHOD:
+        hist = {"method": SALES_METHOD, "windows": []}
+        note = "sales method updated: earlier estimates discarded, starting fresh"
+    if prev and any(len(v) < 4 for v in list(prev["auctions"].values())[:50]):
+        prev = None   # state from an older version without prices
+        note = "sales method updated: starting fresh (next run gives the first estimate)"
     if prev and last_modified and prev.get("lm") == last_modified:
         # Blizzard hasn't refreshed this house since the last snapshot: comparing would record zero sales.
         prev = None
@@ -242,16 +253,24 @@ def track_sales(seen, tracked_ids, house_id, now, last_modified=None):
             # New listings this hour, by (item, stack size). A vanished listing matched by a new one of the same
             # item and size is treated as a cancel-and-repost (undercutting), not a sale.
             reposts = {}
-            for aid, (item_id, qty, tl) in seen.items():
+            for aid, (item_id, qty, tl, _unit) in seen.items():
                 if item_id in tracked_ids and str(aid) not in prev_ids:
                     reposts[(item_id, qty)] = reposts.get((item_id, qty), 0) + 1
-            kept = vanished = matched = 0
-            for aid, (item_id, qty, tl) in prev["auctions"].items():
+            # price at the CHEAP_SHARE point of each item's supply in the previous snapshot
+            by_item = {}
+            for item_id, qty, tl, unit in prev["auctions"].values():
+                by_item.setdefault(item_id, []).append((unit, qty))
+            cheap = {k: weighted_pct(sorted(v), CHEAP_SHARE) for k, v in by_item.items()}
+            kept = vanished = matched = pricey = 0
+            for aid, (item_id, qty, tl, unit) in prev["auctions"].items():
                 cur = seen.get(int(aid))
                 if cur is None:
                     vanished += 1
                     if tl not in ("LONG", "VERY_LONG"):
                         continue          # could simply have expired
+                    if unit > cheap.get(item_id, unit) * 1.0001:
+                        pricey += 1       # wasn't among the cheapest: most likely cancelled after being undercut
+                        continue
                     if reposts.get((item_id, qty), 0) > 0:
                         reposts[(item_id, qty)] -= 1
                         matched += 1
@@ -261,7 +280,8 @@ def track_sales(seen, tracked_ids, house_id, now, last_modified=None):
                     kept += 1
                     if cur[1] < qty:
                         sold[item_id] = sold.get(item_id, 0) + qty - cur[1]
-            print(f"  listings carried over {kept:,}/{len(prev_ids):,}; vanished {vanished:,}, of which {matched:,} matched a repost")
+            print(f"  listings carried over {kept:,}/{len(prev_ids):,}; vanished {vanished:,}: {matched:,} matched a repost, "
+                  f"{pricey:,} weren't among the cheapest (treated as cancelled)")
             if vanished == 0 and sum(reposts.values()) + matched == 0:
                 # Identical listings: Blizzard hasn't refreshed yet. Recording this would count an hour of zero sales.
                 return _per_day(hist), sum(w["hours"] for w in hist["windows"]), \
@@ -273,6 +293,7 @@ def track_sales(seen, tracked_ids, house_id, now, last_modified=None):
             note = f"previous snapshot was {hours:.1f} h ago (needs 0.25-6 h), so this window wasn't counted"
     cutoff = now - dt.timedelta(days=SALES_KEEP_DAYS)
     hist["windows"] = [w for w in hist["windows"] if dt.datetime.fromisoformat(w["t"]) >= cutoff]
+    hist["method"] = SALES_METHOD
     with open(hist_path, "w", encoding="utf-8") as fh:
         json.dump(hist, fh, separators=(",", ":"))
     if not skip_state:
