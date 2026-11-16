@@ -215,7 +215,7 @@ def collect_listings(auctions_json, kind, out, seen=None):
 SALES_KEEP_DAYS = 7
 
 
-def track_sales(seen, tracked_ids, house_id, now):
+def track_sales(seen, tracked_ids, house_id, now, last_modified=None):
     state_path = os.path.join(DATA, f"ah-state-house{house_id}.json")      # last snapshot's listings (gitignored)
     hist_path = os.path.join(DATA, f"ah-sales-house{house_id}.json")       # rolling sales windows
     prev = None
@@ -227,6 +227,13 @@ def track_sales(seen, tracked_ids, house_id, now):
         with open(hist_path, encoding="utf-8") as fh:
             hist = json.load(fh)
     note = "first snapshot: sales estimates start with the next run (about an hour from now)"
+    if prev and last_modified and prev.get("lm") == last_modified:
+        # Blizzard hasn't refreshed this house since the last snapshot: comparing would record zero sales.
+        prev = None
+        note = "AH data hasn't refreshed since the last snapshot, so no sales window was recorded"
+        skip_state = True
+    else:
+        skip_state = False
     if prev:
         hours = (now - dt.datetime.fromisoformat(prev["t"])).total_seconds() / 3600
         if 0.25 <= hours <= 6:
@@ -255,6 +262,10 @@ def track_sales(seen, tracked_ids, house_id, now):
                     if cur[1] < qty:
                         sold[item_id] = sold.get(item_id, 0) + qty - cur[1]
             print(f"  listings carried over {kept:,}/{len(prev_ids):,}; vanished {vanished:,}, of which {matched:,} matched a repost")
+            if vanished == 0 and sum(reposts.values()) + matched == 0:
+                # Identical listings: Blizzard hasn't refreshed yet. Recording this would count an hour of zero sales.
+                return _per_day(hist), sum(w["hours"] for w in hist["windows"]), \
+                    "AH data hasn't refreshed since the last snapshot, so no sales window was recorded"
             hist["windows"].append({"t": now.isoformat(timespec="seconds"), "hours": round(hours, 3),
                                     "sold": {str(k): v for k, v in sold.items()}})
             note = f"compared with the snapshot {hours:.1f} h earlier: {sum(sold.values()):,} items sold across {len(sold):,} tracked items"
@@ -264,18 +275,20 @@ def track_sales(seen, tracked_ids, house_id, now):
     hist["windows"] = [w for w in hist["windows"] if dt.datetime.fromisoformat(w["t"]) >= cutoff]
     with open(hist_path, "w", encoding="utf-8") as fh:
         json.dump(hist, fh, separators=(",", ":"))
-    with open(state_path, "w", encoding="utf-8") as fh:
-        json.dump({"t": now.isoformat(timespec="seconds"),
+    if not skip_state:
+      with open(state_path, "w", encoding="utf-8") as fh:
+        json.dump({"t": now.isoformat(timespec="seconds"), "lm": last_modified,
                    "auctions": {str(k): v for k, v in seen.items() if v[0] in tracked_ids}}, fh, separators=(",", ":"))
+    return _per_day(hist), sum(w["hours"] for w in hist["windows"]), note
+
+
+def _per_day(hist):
     total_h = sum(w["hours"] for w in hist["windows"])
-    per_day = {}
-    if total_h > 0:
-        tot = {}
-        for w in hist["windows"]:
-            for k, v in w["sold"].items():
-                tot[int(k)] = tot.get(int(k), 0) + v
-        per_day = {k: v / total_h * 24 for k, v in tot.items()}
-    return per_day, total_h, note
+    tot = {}
+    for w in hist["windows"]:
+        for k, v in w["sold"].items():
+            tot[int(k)] = tot.get(int(k), 0) + v
+    return {k: v / total_h * 24 for k, v in tot.items()} if total_h > 0 else {}
 
 
 def weighted_pct(listings, pct):
@@ -435,8 +448,13 @@ def main():
 
         now = dt.datetime.now(dt.timezone.utc)
         tracked_ids = {info["id"] for info in ids.values() if info and info.get("id")}
-        sold_day, sold_hours, sales_note = track_sales(seen, tracked_ids, house["id"], now)
+        sold_day, sold_hours, sales_note = track_sales(seen, tracked_ids, house["id"], now, hdr.get("Last-Modified"))
         print("Sales tracking: " + sales_note)
+        if sold_day:
+            id_name = {info["id"]: n for n, info in ids.items() if info and info.get("id")}
+            top = sorted(sold_day.items(), key=lambda kv: -kv[1])[:5]
+            print("  top sellers (est./day vs listed now): " + "; ".join(
+                f"{id_name.get(k, k)} {v:,.0f} vs {sum(q for _, q in listings.get(k, [])):,}" for k, v in top))
 
         prices, missing, unresolved = {}, [], []
         for name in names:
