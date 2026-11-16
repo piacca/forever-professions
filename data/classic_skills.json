@@ -4,17 +4,83 @@
 "118": {
 "Alchemy": 1
 },
+"724": {
+"Cooking": 50
+},
+"733": {
+"Cooking": 75
+},
+"787": {
+"Cooking": 1
+},
 "858": {
 "Alchemy": 55
 },
 "929": {
 "Alchemy": 110
 },
+"1017": {
+"Cooking": 100
+},
+"1082": {
+"Cooking": 100
+},
 "1251": {
 "First Aid": 1
 },
 "1710": {
 "Alchemy": 155
+},
+"2302": {
+"Leatherworking": 1
+},
+"2300": {
+"Leatherworking": 40
+},
+"2311": {
+"Leatherworking": 60
+},
+"2304": {
+"Leatherworking": 1
+},
+"2303": {
+"Leatherworking": 15
+},
+"2307": {
+"Leatherworking": 90
+},
+"2309": {
+"Leatherworking": 55
+},
+"2310": {
+"Leatherworking": 60
+},
+"2308": {
+"Leatherworking": 85
+},
+"2312": {
+"Leatherworking": 75
+},
+"2313": {
+"Leatherworking": 100
+},
+"2317": {
+"Leatherworking": 100
+},
+"2314": {
+"Leatherworking": 120
+},
+"2316": {
+"Leatherworking": 110
+},
+"2318": {
+"Leatherworking": 1
+},
+"2315": {
+"Leatherworking": 100
+},
+"2319": {
+"Leatherworking": 100
 },
 "2454": {
 "Alchemy": 1
@@ -82,6 +148,36 @@
 "2587": {
 "Tailoring": 100
 },
+"2682": {
+"Cooking": 85
+},
+"2679": {
+"Cooking": 0
+},
+"2680": {
+"Cooking": 10
+},
+"2681": {
+"Cooking": 0
+},
+"2683": {
+"Cooking": 75
+},
+"2685": {
+"Cooking": 110
+},
+"2687": {
+"Cooking": 80
+},
+"2684": {
+"Cooking": 50
+},
+"2842": {
+"Mining": 75
+},
+"2841": {
+"Mining": 65
+},
 "2844": {
 "Blacksmithing": 15
 },
@@ -90,6 +186,9 @@
 },
 "2845": {
 "Blacksmithing": 20
+},
+"2840": {
+"Mining": 25
 },
 "2848": {
 "Blacksmithing": 110
@@ -142,11 +241,17 @@
 "2869": {
 "Blacksmithing": 130
 },
+"2888": {
+"Cooking": 25
+},
 "2996": {
 "Tailoring": 1
 },
 "2997": {
 "Tailoring": 75
+},
+"3220": {
+"Cooking": 60
 },
 "3239": {
 "Blacksmithing": 1
@@ -253,9 +358,45 @@
 "3531": {
 "First Aid": 115
 },
+"3576": {
+"Mining": 65
+},
+"3575": {
+"Mining": 125
+},
 "3577": {
 "Mining": 155,
 "Alchemy": 225
+},
+"3663": {
+"Cooking": 90
+},
+"3664": {
+"Cooking": 120
+},
+"3665": {
+"Cooking": 130
+},
+"3662": {
+"Cooking": 80
+},
+"3666": {
+"Cooking": 110
+},
+"3719": {
+"Leatherworking": 150
+},
+"3727": {
+"Cooking": 125
+},
+"3726": {
+"Cooking": 110
+},
+"3728": {
+"Cooking": 150
+},
+"3729": {
+"Cooking": 175
 },
 "3824": {
 "Alchemy": 165
@@ -338,26 +479,116 @@
 "3854": {
 "Blacksmithing": 200
 },
+"3859": {
+"Mining": 165
+},
+"3860": {
+"Mining": 175
+},
 "3928": {
 "Alchemy": 215
+},
+"4231": {
+"Leatherworking": 35
+},
+"4246": {
+"Leatherworking": 80
+},
+"4244": {
+"Leatherworking": 100
+},
+"4234": {
+"Leatherworking": 150
+},
+"4233": {
+"Leatherworking": 100
+},
+"4236": {
+"Leatherworking": 150
 },
 "4241": {
 "Tailoring": 95
 },
+"4239": {
+"Leatherworking": 55
+},
+"4237": {
+"Leatherworking": 25
+},
 "4238": {
 "Tailoring": 45
+},
+"4253": {
+"Leatherworking": 135
 },
 "4240": {
 "Tailoring": 80
 },
+"4242": {
+"Leatherworking": 75
+},
+"4248": {
+"Leatherworking": 120
+},
+"4243": {
+"Leatherworking": 85
+},
+"4247": {
+"Leatherworking": 145
+},
+"4249": {
+"Leatherworking": 125
+},
 "4245": {
 "Tailoring": 150
+},
+"4250": {
+"Leatherworking": 120
+},
+"4252": {
+"Leatherworking": 140
+},
+"4251": {
+"Leatherworking": 130
+},
+"4254": {
+"Leatherworking": 150
+},
+"4255": {
+"Leatherworking": 155
+},
+"4256": {
+"Leatherworking": 175
+},
+"4257": {
+"Leatherworking": 160
+},
+"4258": {
+"Leatherworking": 170
+},
+"4259": {
+"Leatherworking": 180
+},
+"4262": {
+"Leatherworking": 185
+},
+"4260": {
+"Leatherworking": 195
+},
+"4264": {
+"Leatherworking": 200
+},
+"4265": {
+"Leatherworking": 150
 },
 "4308": {
 "Tailoring": 60
 },
 "4311": {
 "Tailoring": 100
+},
+"4304": {
+"Leatherworking": 200
 },
 "4307": {
 "Tailoring": 35
@@ -452,14 +683,221 @@
 "4343": {
 "Tailoring": 30
 },
+"4357": {
+"Engineering": 1
+},
+"4359": {
+"Engineering": 30
+},
+"4358": {
+"Engineering": 1
+},
+"4361": {
+"Engineering": 50
+},
+"4362": {
+"Engineering": 50
+},
+"4360": {
+"Engineering": 30
+},
+"4372": {
+"Engineering": 120
+},
+"4370": {
+"Engineering": 105
+},
+"4363": {
+"Engineering": 65
+},
+"4365": {
+"Engineering": 75
+},
+"4367": {
+"Engineering": 100
+},
+"4366": {
+"Engineering": 85
+},
+"4368": {
+"Engineering": 100
+},
+"4364": {
+"Engineering": 75
+},
+"4371": {
+"Engineering": 105
+},
+"4369": {
+"Engineering": 105
+},
+"4373": {
+"Engineering": 120
+},
+"4374": {
+"Engineering": 120
+},
+"4375": {
+"Engineering": 125
+},
+"4376": {
+"Engineering": 125
+},
+"4377": {
+"Engineering": 125
+},
+"4378": {
+"Engineering": 125
+},
+"4380": {
+"Engineering": 140
+},
+"4379": {
+"Engineering": 130
+},
+"4384": {
+"Engineering": 150
+},
+"4381": {
+"Engineering": 140
+},
+"4383": {
+"Engineering": 145
+},
+"4382": {
+"Engineering": 145
+},
 "4325": {
 "Tailoring": 175
+},
+"4392": {
+"Engineering": 185
+},
+"4385": {
+"Engineering": 150
+},
+"4389": {
+"Engineering": 170
+},
+"4386": {
+"Engineering": 155
+},
+"4388": {
+"Engineering": 160
+},
+"4390": {
+"Engineering": 175
+},
+"4391": {
+"Engineering": 175
+},
+"4387": {
+"Engineering": 160
+},
+"4394": {
+"Engineering": 190
+},
+"4393": {
+"Engineering": 185
+},
+"4395": {
+"Engineering": 195
+},
+"4396": {
+"Engineering": 200
+},
+"4397": {
+"Engineering": 200
+},
+"4403": {
+"Engineering": 165
+},
+"4398": {
+"Engineering": 200
+},
+"4401": {
+"Engineering": 75
+},
+"4404": {
+"Engineering": 90
+},
+"4406": {
+"Engineering": 110
+},
+"4407": {
+"Engineering": 180
+},
+"4405": {
+"Engineering": 60
+},
+"4456": {
+"Leatherworking": 165
+},
+"4455": {
+"Leatherworking": 165
+},
+"4457": {
+"Cooking": 175
+},
+"4592": {
+"Cooking": 50
+},
+"4594": {
+"Cooking": 175
+},
+"4593": {
+"Cooking": 100
 },
 "4596": {
 "Alchemy": 50
 },
 "4623": {
 "Alchemy": 215
+},
+"4852": {
+"Engineering": 185
+},
+"5081": {
+"Leatherworking": 40
+},
+"5095": {
+"Cooking": 50
+},
+"5473": {
+"Cooking": 20
+},
+"5472": {
+"Cooking": 10
+},
+"5474": {
+"Cooking": 35
+},
+"5477": {
+"Cooking": 50
+},
+"5478": {
+"Cooking": 90
+},
+"5476": {
+"Cooking": 50
+},
+"5479": {
+"Cooking": 100
+},
+"5480": {
+"Cooking": 110
+},
+"5507": {
+"Engineering": 135
+},
+"5525": {
+"Cooking": 50
+},
+"5526": {
+"Cooking": 90
+},
+"5527": {
+"Cooking": 125
 },
 "5542": {
 "Tailoring": 90
@@ -479,6 +917,9 @@
 "5631": {
 "Alchemy": 60
 },
+"5739": {
+"Leatherworking": 190
+},
 "5765": {
 "Tailoring": 185
 },
@@ -497,6 +938,42 @@
 "5770": {
 "Tailoring": 150
 },
+"5781": {
+"Leatherworking": 95
+},
+"5780": {
+"Leatherworking": 90
+},
+"5783": {
+"Leatherworking": 190
+},
+"5782": {
+"Leatherworking": 170
+},
+"5958": {
+"Leatherworking": 105
+},
+"5961": {
+"Leatherworking": 115
+},
+"5957": {
+"Leatherworking": 1
+},
+"5962": {
+"Leatherworking": 160
+},
+"5963": {
+"Leatherworking": 170
+},
+"5965": {
+"Leatherworking": 185
+},
+"5964": {
+"Leatherworking": 175
+},
+"5966": {
+"Leatherworking": 190
+},
 "5996": {
 "Alchemy": 90
 },
@@ -509,6 +986,9 @@
 "6037": {
 "Mining": 230,
 "Alchemy": 225
+},
+"6038": {
+"Cooking": 175
 },
 "6048": {
 "Alchemy": 135
@@ -540,6 +1020,12 @@
 "6214": {
 "Blacksmithing": 65
 },
+"6219": {
+"Engineering": 50
+},
+"6218": {
+"Enchanting": 1
+},
 "6240": {
 "Tailoring": 55
 },
@@ -560,6 +1046,15 @@
 },
 "6264": {
 "Tailoring": 115
+},
+"6290": {
+"Cooking": 1
+},
+"6316": {
+"Cooking": 50
+},
+"6339": {
+"Enchanting": 100
 },
 "6338": {
 "Blacksmithing": 100
@@ -594,8 +1089,32 @@
 "6453": {
 "First Aid": 130
 },
+"6466": {
+"Leatherworking": 90
+},
+"6467": {
+"Leatherworking": 105
+},
+"6468": {
+"Leatherworking": 115
+},
+"6533": {
+"Engineering": 150
+},
+"6657": {
+"Cooking": 85
+},
 "6662": {
 "Alchemy": 90
+},
+"6709": {
+"Leatherworking": 90
+},
+"6712": {
+"Engineering": 100
+},
+"6714": {
+"Engineering": 100
 },
 "6731": {
 "Blacksmithing": 100
@@ -611,6 +1130,15 @@
 },
 "6795": {
 "Tailoring": 160
+},
+"6888": {
+"Cooking": 1
+},
+"6887": {
+"Cooking": 225
+},
+"6890": {
+"Cooking": 40
 },
 "7052": {
 "Tailoring": 175
@@ -693,8 +1221,98 @@
 "7082": {
 "Alchemy": 275
 },
+"7189": {
+"Engineering": 225
+},
+"7148": {
+"Engineering": 165
+},
 "7166": {
 "Blacksmithing": 30
+},
+"7276": {
+"Leatherworking": 1
+},
+"7278": {
+"Leatherworking": 30
+},
+"7279": {
+"Leatherworking": 30
+},
+"7277": {
+"Leatherworking": 1
+},
+"7283": {
+"Leatherworking": 100
+},
+"7281": {
+"Leatherworking": 70
+},
+"7282": {
+"Leatherworking": 95
+},
+"7280": {
+"Leatherworking": 35
+},
+"7285": {
+"Leatherworking": 120
+},
+"7284": {
+"Leatherworking": 120
+},
+"7349": {
+"Leatherworking": 135
+},
+"7348": {
+"Leatherworking": 125
+},
+"7352": {
+"Leatherworking": 135
+},
+"7359": {
+"Leatherworking": 145
+},
+"7358": {
+"Leatherworking": 140
+},
+"7371": {
+"Leatherworking": 150
+},
+"7372": {
+"Leatherworking": 150
+},
+"7373": {
+"Leatherworking": 165
+},
+"7375": {
+"Leatherworking": 175
+},
+"7374": {
+"Leatherworking": 175
+},
+"7378": {
+"Leatherworking": 185
+},
+"7377": {
+"Leatherworking": 180
+},
+"7386": {
+"Leatherworking": 190
+},
+"7387": {
+"Leatherworking": 195
+},
+"7391": {
+"Leatherworking": 200
+},
+"7390": {
+"Leatherworking": 200
+},
+"7506": {
+"Engineering": 125
+},
+"7676": {
+"Cooking": 60
 },
 "7914": {
 "Blacksmithing": 160
@@ -834,6 +1452,135 @@
 "7921": {
 "Blacksmithing": 210
 },
+"8067": {
+"Engineering": 30
+},
+"8069": {
+"Engineering": 125
+},
+"8068": {
+"Engineering": 75
+},
+"8170": {
+"Leatherworking": 250
+},
+"8173": {
+"Leatherworking": 200
+},
+"8172": {
+"Leatherworking": 200
+},
+"8176": {
+"Leatherworking": 205
+},
+"8175": {
+"Leatherworking": 205
+},
+"8174": {
+"Leatherworking": 200
+},
+"8185": {
+"Leatherworking": 235
+},
+"8187": {
+"Leatherworking": 205
+},
+"8204": {
+"Leatherworking": 225
+},
+"8189": {
+"Leatherworking": 210
+},
+"8191": {
+"Leatherworking": 230
+},
+"8192": {
+"Leatherworking": 210
+},
+"8193": {
+"Leatherworking": 230
+},
+"8197": {
+"Leatherworking": 235
+},
+"8200": {
+"Leatherworking": 215
+},
+"8201": {
+"Leatherworking": 220
+},
+"8202": {
+"Leatherworking": 240
+},
+"8203": {
+"Leatherworking": 220
+},
+"8205": {
+"Leatherworking": 220
+},
+"8206": {
+"Leatherworking": 245
+},
+"8207": {
+"Leatherworking": 240
+},
+"8210": {
+"Leatherworking": 220
+},
+"8209": {
+"Leatherworking": 235
+},
+"8208": {
+"Leatherworking": 250
+},
+"8211": {
+"Leatherworking": 225
+},
+"8212": {
+"Leatherworking": 250
+},
+"8213": {
+"Leatherworking": 245
+},
+"8215": {
+"Leatherworking": 250
+},
+"8214": {
+"Leatherworking": 225
+},
+"8216": {
+"Leatherworking": 240
+},
+"8218": {
+"Leatherworking": 225
+},
+"8217": {
+"Leatherworking": 225
+},
+"8198": {
+"Leatherworking": 210
+},
+"8347": {
+"Leatherworking": 225
+},
+"8345": {
+"Leatherworking": 225
+},
+"8348": {
+"Leatherworking": 250
+},
+"8367": {
+"Leatherworking": 255
+},
+"8364": {
+"Cooking": 175
+},
+"8349": {
+"Leatherworking": 250
+},
+"8346": {
+"Leatherworking": 230
+},
 "8544": {
 "First Aid": 210
 },
@@ -905,6 +1652,15 @@
 },
 "9264": {
 "Alchemy": 250
+},
+"9313": {
+"Engineering": 150
+},
+"9312": {
+"Engineering": 150
+},
+"9318": {
+"Engineering": 150
 },
 "9366": {
 "Blacksmithing": 205
@@ -1035,17 +1791,167 @@
 "10423": {
 "Blacksmithing": 155
 },
+"10499": {
+"Engineering": 175
+},
+"10498": {
+"Engineering": 175
+},
+"10500": {
+"Engineering": 205
+},
+"10501": {
+"Engineering": 220
+},
+"10502": {
+"Engineering": 225
+},
+"10503": {
+"Engineering": 230
+},
+"10505": {
+"Engineering": 175
+},
+"10506": {
+"Engineering": 230
+},
+"10507": {
+"Engineering": 175
+},
+"10504": {
+"Engineering": 245
+},
+"10508": {
+"Engineering": 205
+},
+"10542": {
+"Engineering": 205
+},
+"10510": {
+"Engineering": 220
+},
+"10512": {
+"Engineering": 210
+},
+"10513": {
+"Engineering": 245
+},
+"10514": {
+"Engineering": 215
+},
+"10518": {
+"Engineering": 225
+},
+"10543": {
+"Engineering": 205
+},
+"10546": {
+"Engineering": 210
+},
+"10545": {
+"Engineering": 210
+},
+"10548": {
+"Engineering": 240
+},
+"10558": {
+"Engineering": 150
+},
+"10559": {
+"Engineering": 195
+},
+"10560": {
+"Engineering": 200
+},
+"10561": {
+"Engineering": 215
+},
+"10562": {
+"Engineering": 235
+},
+"10576": {
+"Engineering": 250
+},
+"10577": {
+"Engineering": 205
+},
+"10587": {
+"Engineering": 230
+},
+"10586": {
+"Engineering": 235
+},
+"10588": {
+"Engineering": 245
+},
 "10592": {
 "Alchemy": 200
+},
+"10644": {
+"Engineering": 205
+},
+"10646": {
+"Engineering": 205
+},
+"10645": {
+"Engineering": 240
+},
+"10713": {
+"Engineering": 205
+},
+"10720": {
+"Engineering": 210
+},
+"10716": {
+"Engineering": 205
+},
+"10721": {
+"Engineering": 215
+},
+"10725": {
+"Engineering": 230
+},
+"10726": {
+"Engineering": 235
+},
+"10724": {
+"Engineering": 225
+},
+"10727": {
+"Engineering": 240
+},
+"10841": {
+"Cooking": 175
 },
 "11128": {
 "Blacksmithing": 150
 },
+"11130": {
+"Enchanting": 150
+},
 "11144": {
 "Blacksmithing": 200
 },
+"11145": {
+"Enchanting": 200
+},
+"11287": {
+"Enchanting": 10
+},
+"11288": {
+"Enchanting": 70
+},
+"11289": {
+"Enchanting": 155
+},
+"11371": {
+"Mining": 300
+},
 "11608": {
 "Blacksmithing": 265
+},
+"11590": {
+"Engineering": 200
 },
 "11607": {
 "Blacksmithing": 275
@@ -1059,14 +1965,53 @@
 "11605": {
 "Blacksmithing": 280
 },
+"11825": {
+"Engineering": 205
+},
+"11826": {
+"Engineering": 205
+},
+"12209": {
+"Cooking": 125
+},
 "12190": {
 "Alchemy": 230
+},
+"12212": {
+"Cooking": 175
+},
+"12210": {
+"Cooking": 175
+},
+"12214": {
+"Cooking": 175
+},
+"12213": {
+"Cooking": 175
+},
+"12215": {
+"Cooking": 200
+},
+"12216": {
+"Cooking": 225
+},
+"12217": {
+"Cooking": 200
+},
+"12218": {
+"Cooking": 225
+},
+"12224": {
+"Cooking": 1
 },
 "12259": {
 "Blacksmithing": 180
 },
 "12260": {
 "Blacksmithing": 190
+},
+"12359": {
+"Mining": 250
 },
 "12360": {
 "Alchemy": 275
@@ -1158,10 +2103,19 @@
 "12625": {
 "Blacksmithing": 290
 },
+"12624": {
+"Blacksmithing": 270
+},
 "12631": {
 "Blacksmithing": 290
 },
 "12633": {
+"Blacksmithing": 300
+},
+"12632": {
+"Blacksmithing": 295
+},
+"12641": {
 "Blacksmithing": 300
 },
 "12640": {
@@ -1178,6 +2132,10 @@
 },
 "12645": {
 "Blacksmithing": 275
+},
+"12655": {
+"Enchanting": 250,
+"Mining": 250
 },
 "12774": {
 "Blacksmithing": 275
@@ -1229,6 +2187,9 @@
 },
 "12808": {
 "Alchemy": 275
+},
+"12810": {
+"Enchanting": 250
 },
 "13445": {
 "Alchemy": 265
@@ -1299,6 +2260,9 @@
 "13512": {
 "Alchemy": 300
 },
+"13851": {
+"Cooking": 175
+},
 "13857": {
 "Tailoring": 260
 },
@@ -1337,6 +2301,33 @@
 },
 "13869": {
 "Tailoring": 255
+},
+"13933": {
+"Cooking": 275
+},
+"13928": {
+"Cooking": 240
+},
+"13927": {
+"Cooking": 225
+},
+"13929": {
+"Cooking": 240
+},
+"13930": {
+"Cooking": 225
+},
+"13931": {
+"Cooking": 250
+},
+"13932": {
+"Cooking": 250
+},
+"13935": {
+"Cooking": 275
+},
+"13934": {
+"Cooking": 275
 },
 "14042": {
 "Tailoring": 260
@@ -1446,8 +2437,173 @@
 "14529": {
 "First Aid": 260
 },
+"15056": {
+"Leatherworking": 285
+},
+"15046": {
+"Leatherworking": 270
+},
+"15045": {
+"Leatherworking": 260
+},
+"15047": {
+"Leatherworking": 300
+},
+"15052": {
+"Leatherworking": 300
+},
+"15048": {
+"Leatherworking": 285
+},
+"15050": {
+"Leatherworking": 290
+},
+"15049": {
+"Leatherworking": 295
+},
+"15054": {
+"Leatherworking": 270
+},
+"15055": {
+"Leatherworking": 300
+},
+"15051": {
+"Leatherworking": 300
+},
+"15058": {
+"Leatherworking": 295
+},
+"15053": {
+"Leatherworking": 285
+},
+"15057": {
+"Leatherworking": 275
+},
+"15060": {
+"Leatherworking": 285
+},
+"15059": {
+"Leatherworking": 300
+},
+"15061": {
+"Leatherworking": 270
+},
+"15062": {
+"Leatherworking": 300
+},
+"15063": {
+"Leatherworking": 290
+},
+"15065": {
+"Leatherworking": 285
+},
+"15064": {
+"Leatherworking": 275
+},
+"15068": {
+"Leatherworking": 300
+},
+"15066": {
+"Leatherworking": 290
+},
+"15067": {
+"Leatherworking": 270
+},
+"15072": {
+"Leatherworking": 280
+},
+"15069": {
+"Leatherworking": 285
+},
+"15071": {
+"Leatherworking": 275
+},
+"15070": {
+"Leatherworking": 295
+},
+"15076": {
+"Leatherworking": 265
+},
+"15075": {
+"Leatherworking": 290
+},
+"15074": {
+"Leatherworking": 265
+},
+"15078": {
+"Leatherworking": 275
+},
+"15073": {
+"Leatherworking": 275
+},
+"15077": {
+"Leatherworking": 255
+},
+"15079": {
+"Leatherworking": 285
+},
+"15081": {
+"Leatherworking": 300
+},
+"15083": {
+"Leatherworking": 260
+},
+"15082": {
+"Leatherworking": 280
+},
+"15086": {
+"Leatherworking": 280
+},
+"15085": {
+"Leatherworking": 300
+},
+"15080": {
+"Leatherworking": 295
+},
+"15084": {
+"Leatherworking": 265
+},
+"15087": {
+"Leatherworking": 290
+},
+"15090": {
+"Leatherworking": 300
+},
+"15088": {
+"Leatherworking": 300
+},
+"15091": {
+"Leatherworking": 270
+},
+"15092": {
+"Leatherworking": 275
+},
+"15094": {
+"Leatherworking": 290
+},
+"15095": {
+"Leatherworking": 300
+},
+"15093": {
+"Leatherworking": 280
+},
+"15096": {
+"Leatherworking": 300
+},
+"15138": {
+"Leatherworking": 300
+},
+"15407": {
+"Leatherworking": 250
+},
+"15564": {
+"Leatherworking": 250
+},
 "15802": {
 "Tailoring": 290
+},
+"15846": {
+"Engineering": 250
 },
 "15869": {
 "Blacksmithing": 100
@@ -1461,8 +2617,65 @@
 "15872": {
 "Blacksmithing": 275
 },
+"15993": {
+"Engineering": 260
+},
+"15994": {
+"Engineering": 260
+},
+"15997": {
+"Engineering": 285
+},
+"15992": {
+"Engineering": 250
+},
+"15995": {
+"Engineering": 260
+},
+"15996": {
+"Engineering": 265
+},
+"16000": {
+"Engineering": 275
+},
+"15999": {
+"Engineering": 270
+},
+"16004": {
+"Engineering": 275
+},
+"16005": {
+"Engineering": 285
+},
+"16006": {
+"Engineering": 285
+},
+"16007": {
+"Engineering": 300
+},
+"16009": {
+"Engineering": 290
+},
+"16023": {
+"Engineering": 275
+},
+"16008": {
+"Engineering": 290
+},
+"16022": {
+"Engineering": 300
+},
+"16040": {
+"Engineering": 300
+},
+"16207": {
+"Enchanting": 290
+},
 "16206": {
 "Blacksmithing": 275
+},
+"16766": {
+"Cooking": 225
 },
 "16979": {
 "Tailoring": 300
@@ -1470,8 +2683,17 @@
 "16980": {
 "Tailoring": 300
 },
+"16982": {
+"Leatherworking": 295
+},
 "16988": {
 "Blacksmithing": 300
+},
+"16983": {
+"Leatherworking": 300
+},
+"16984": {
+"Leatherworking": 300
 },
 "16989": {
 "Blacksmithing": 295
@@ -1491,17 +2713,53 @@
 "17193": {
 "Blacksmithing": 300
 },
+"17197": {
+"Cooking": 1
+},
+"17198": {
+"Cooking": 35
+},
+"17222": {
+"Cooking": 200
+},
 "17704": {
 "Blacksmithing": 190
 },
 "17708": {
 "Alchemy": 190
 },
+"17716": {
+"Engineering": 190
+},
+"17721": {
+"Leatherworking": 190
+},
 "17723": {
 "Tailoring": 190
 },
+"17771": {
+"Mining": 300
+},
+"18045": {
+"Cooking": 225
+},
+"18168": {
+"Engineering": 300
+},
+"18232": {
+"Engineering": 300
+},
+"18238": {
+"Leatherworking": 200
+},
+"18251": {
+"Leatherworking": 300
+},
 "18253": {
 "Alchemy": 300
+},
+"18254": {
+"Cooking": 275
 },
 "18258": {
 "Tailoring": 285,
@@ -1512,6 +2770,12 @@
 },
 "18263": {
 "Tailoring": 300
+},
+"18282": {
+"Engineering": 300
+},
+"18283": {
+"Engineering": 300
 },
 "18294": {
 "Alchemy": 215
@@ -1534,14 +2798,95 @@
 "18486": {
 "Tailoring": 300
 },
+"18504": {
+"Leatherworking": 300
+},
+"18508": {
+"Leatherworking": 300
+},
+"18506": {
+"Leatherworking": 300
+},
+"18509": {
+"Leatherworking": 300
+},
+"18510": {
+"Leatherworking": 300
+},
+"18511": {
+"Leatherworking": 300
+},
+"18587": {
+"Engineering": 265
+},
+"18588": {
+"Engineering": 200
+},
+"18594": {
+"Engineering": 275
+},
+"18631": {
+"Engineering": 260
+},
+"18634": {
+"Engineering": 260
+},
+"18639": {
+"Engineering": 300
+},
+"18638": {
+"Engineering": 290
+},
+"18641": {
+"Engineering": 250
+},
+"18637": {
+"Engineering": 275
+},
+"18645": {
+"Engineering": 265
+},
+"18662": {
+"Leatherworking": 150
+},
+"18660": {
+"Engineering": 260
+},
+"18948": {
+"Leatherworking": 155
+},
+"18984": {
+"Engineering": 285
+},
+"18986": {
+"Engineering": 285
+},
+"19026": {
+"Engineering": 250
+},
+"19043": {
+"Blacksmithing": 290
+},
 "19047": {
 "Tailoring": 290
+},
+"19048": {
+"Blacksmithing": 300
+},
+"19044": {
+"Leatherworking": 290
+},
+"19049": {
+"Leatherworking": 300
 },
 "19050": {
 "Tailoring": 300
 },
 "19051": {
 "Blacksmithing": 290
+},
+"19052": {
+"Leatherworking": 290
 },
 "19059": {
 "Tailoring": 300
@@ -1552,11 +2897,26 @@
 "19057": {
 "Blacksmithing": 300
 },
+"19058": {
+"Leatherworking": 300
+},
 "19148": {
 "Blacksmithing": 300
 },
+"19149": {
+"Leatherworking": 300
+},
+"19157": {
+"Leatherworking": 300
+},
 "19156": {
 "Tailoring": 300
+},
+"19162": {
+"Leatherworking": 300
+},
+"19163": {
+"Leatherworking": 300
 },
 "19165": {
 "Tailoring": 300
@@ -1591,6 +2951,21 @@
 "19684": {
 "Tailoring": 300
 },
+"19686": {
+"Leatherworking": 300
+},
+"19685": {
+"Leatherworking": 300
+},
+"19687": {
+"Leatherworking": 300
+},
+"19689": {
+"Leatherworking": 300
+},
+"19688": {
+"Leatherworking": 300
+},
 "19690": {
 "Blacksmithing": 300
 },
@@ -1612,6 +2987,12 @@
 "19931": {
 "Alchemy": 315
 },
+"19998": {
+"Engineering": 300
+},
+"19999": {
+"Engineering": 300
+},
 "20002": {
 "Alchemy": 275
 },
@@ -1626,6 +3007,39 @@
 },
 "20039": {
 "Blacksmithing": 300
+},
+"20074": {
+"Cooking": 150
+},
+"20295": {
+"Leatherworking": 300
+},
+"20296": {
+"Leatherworking": 280
+},
+"20380": {
+"Leatherworking": 300
+},
+"20452": {
+"Cooking": 285
+},
+"20476": {
+"Leatherworking": 300
+},
+"20478": {
+"Leatherworking": 300
+},
+"20477": {
+"Leatherworking": 300
+},
+"20479": {
+"Leatherworking": 300
+},
+"20481": {
+"Leatherworking": 300
+},
+"20480": {
+"Leatherworking": 300
 },
 "20538": {
 "Tailoring": 300
@@ -1645,8 +3059,47 @@
 "20551": {
 "Blacksmithing": 300
 },
+"20575": {
+"Leatherworking": 100
+},
+"20744": {
+"Enchanting": 45
+},
+"20745": {
+"Enchanting": 150
+},
+"20746": {
+"Enchanting": 200
+},
+"20747": {
+"Enchanting": 250
+},
+"20748": {
+"Enchanting": 300
+},
+"20750": {
+"Enchanting": 275
+},
+"20749": {
+"Enchanting": 300
+},
+"21023": {
+"Cooking": 300
+},
+"21072": {
+"Cooking": 80
+},
 "21154": {
 "Tailoring": 250
+},
+"21217": {
+"Cooking": 175
+},
+"21277": {
+"Engineering": 250
+},
+"21278": {
+"Leatherworking": 300
 },
 "21340": {
 "Tailoring": 260
@@ -1662,6 +3115,48 @@
 },
 "21546": {
 "Alchemy": 250
+},
+"21557": {
+"Engineering": 125
+},
+"21558": {
+"Engineering": 125
+},
+"21559": {
+"Engineering": 125
+},
+"21569": {
+"Engineering": 225
+},
+"21570": {
+"Engineering": 275
+},
+"21571": {
+"Engineering": 225
+},
+"21574": {
+"Engineering": 225
+},
+"21576": {
+"Engineering": 225
+},
+"21589": {
+"Engineering": 175
+},
+"21590": {
+"Engineering": 175
+},
+"21592": {
+"Engineering": 175
+},
+"21714": {
+"Engineering": 275
+},
+"21716": {
+"Engineering": 275
+},
+"21718": {
+"Engineering": 275
 },
 "22191": {
 "Blacksmithing": 300
@@ -1720,6 +3215,24 @@
 "22660": {
 "Tailoring": 300
 },
+"22662": {
+"Leatherworking": 300
+},
+"22661": {
+"Leatherworking": 300
+},
+"22663": {
+"Leatherworking": 300
+},
+"22664": {
+"Leatherworking": 300
+},
+"22666": {
+"Leatherworking": 300
+},
+"22665": {
+"Leatherworking": 300
+},
 "22670": {
 "Blacksmithing": 300
 },
@@ -1728,6 +3241,9 @@
 },
 "22671": {
 "Blacksmithing": 300
+},
+"22728": {
+"Engineering": 275
 },
 "22756": {
 "Tailoring": 300
@@ -1738,14 +3254,29 @@
 "22758": {
 "Tailoring": 300
 },
+"22759": {
+"Leatherworking": 300
+},
+"22760": {
+"Leatherworking": 300
+},
+"22761": {
+"Leatherworking": 300
+},
 "6373": {
 "Alchemy": 140
+},
+"12636": {
+"Blacksmithing": 300
 },
 "14154": {
 "Tailoring": 300
 },
 "34085": {
 "Tailoring": 250
+},
+"34086": {
+"Leatherworking": 285
 },
 "34087": {
 "Tailoring": 250

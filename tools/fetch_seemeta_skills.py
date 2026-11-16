@@ -17,8 +17,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
 PAGES = {
-    "Alchemy": "alchemy", "Tailoring": "tailoring", "Blacksmithing": "blacksmithing",
-    "First Aid": "first-aid", "Herbalism": "herbalism",
+    "Alchemy": "alchemy", "Blacksmithing": "blacksmithing", "Enchanting": "enchanting", "Engineering": "engineering",
+    "Leatherworking": "leatherworking", "Tailoring": "tailoring", "Cooking": "cooking", "First Aid": "first-aid",
+    "Fishing": "fishing", "Herbalism": "herbalism", "Mining": "mining", "Skinning": "skinning",
 }
 BASE = "https://seemeta.com/en/wow-forever/professions/"
 

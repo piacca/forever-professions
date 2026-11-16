@@ -13,9 +13,6 @@ import re
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
-# Professions where crafted item level predicts the skill requirement well enough to estimate it
-# for trainer recipes. Fitted on recipes whose skill is known (see the fit in estimate()).
-ESTIMATE_PROFS = {"Tailoring", "Blacksmithing"}
 
 
 def fit(points):
@@ -34,36 +31,56 @@ def main():
 
     fd = json.load(open(os.path.join(DATA, "forever_data.json"), encoding="utf-8"))
     ilvl = {i["name"]: i.get("ilvl") for i in fd["items"]}
+    import statistics
 
     def known_skill(r):
         return ((r.get("learn") or {}).get("skill") or (r.get("trainer") or {}).get("skill")
                 or (r.get("wowhead") or {}).get("skill"))
 
-    models = {}
-    for prof in ESTIMATE_PROFS:
-        pts = [(ilvl[r["output"]], known_skill(r)) for r in fd["recipes"]
-               if r["prof"] == prof and known_skill(r) and ilvl.get(r["output"])]
-        if len(pts) > 30:
-            models[prof] = fit(pts)
-
     def load(name, key):
         p = os.path.join(DATA, name)
         return json.load(open(p, encoding="utf-8"))[key] if os.path.exists(p) else {}
 
-    seemeta = {prof: {row["id"]: row for row in rows} for prof, rows in load("seemeta_skills.json", "professions").items()}
+    seemeta_rows = load("seemeta_skills.json", "professions")
+    seemeta_id = {prof: {row["id"]: row for row in rows if row["kind"] == "item"} for prof, rows in seemeta_rows.items()}
+    seemeta_name = {prof: {row["name"]: row for row in rows if row["name"]} for prof, rows in seemeta_rows.items()}
     classic = load("classic_skills.json", "skills")
 
-    # Forever rebalanced Tailoring/Blacksmithing skills. Learn the Classic -> Forever mapping from recipes
-    # whose Forever skill is known exactly, and use it (capped at seemeta's exact yellow) for trainer recipes.
-    import statistics
-    conv = {}
-    for prof in ESTIMATE_PROFS:
-        pairs = {}
-        for r in fd["recipes"]:
-            c = (classic.get(str(r["output_id"])) or {}).get(prof)
-            if r["prof"] == prof and c and known_skill(r):
-                pairs.setdefault(c, []).append(known_skill(r))
-        conv[prof] = {c: statistics.median(v) for c, v in pairs.items()}
+    def sm_row(r):
+        return ((seemeta_id.get(r["prof"]) or {}).get(r["output_id"]) if r["output_id"] else None) \
+            or (seemeta_name.get(r["prof"]) or {}).get(r["name"])
+
+    def exact(r):
+        sm = sm_row(r)
+        return known_skill(r) or (sm and sm["skill"])
+
+    def classic_skill(r):
+        return (classic.get(str(r["output_id"])) or {}).get(r["prof"]) if r["output_id"] else None
+
+    # Per profession, decide how far Classic data can be trusted: compare it with recipes whose Forever skill is exact.
+    # Many agree exactly ("classic"); some professions were rescaled ("converted" via a learned Classic->Forever map).
+    strategy, conv, gap, models, report = {}, {}, {}, {}, []
+    for prof in sorted({r["prof"] for r in fd["recipes"]}):
+        rs = [r for r in fd["recipes"] if r["prof"] == prof]
+        pairs = [(classic_skill(r), exact(r)) for r in rs if classic_skill(r) and exact(r)]
+        same = sum(1 for c, e in pairs if c == e)
+        m = {}
+        for c, e in pairs:
+            m.setdefault(c, []).append(e)
+        conv[prof] = {c: statistics.median(v) for c, v in m.items()}
+        if len(pairs) >= 5 and same / len(pairs) >= 0.8:
+            strategy[prof] = "classic"
+        elif len(pairs) >= 30:
+            strategy[prof] = "converted"
+        # typical gap between learn skill (orange) and yellow, from rows where all four values are known
+        g = [row["colors"][1] - row["colors"][0] for row in seemeta_rows.get(prof, [])
+             if row["colors"] and len(row["colors"]) == 4 and row["colors"][0] is not None]
+        if g:
+            gap[prof] = statistics.median(g)
+        pts = [(ilvl[r["output"]], exact(r)) for r in rs if exact(r) and r["output"] and ilvl.get(r["output"])]
+        if len(pts) > 30:
+            models[prof] = fit(pts)
+        report.append(f"{prof}: Classic agrees {same}/{len(pairs)} -> {strategy.get(prof, 'not used')}")
 
     def convert(prof, c):
         m = conv.get(prof) or {}
@@ -75,30 +92,36 @@ def main():
         lo = [k for k in ks if k < c]
         hi = [k for k in ks if k > c]
         if lo and hi:
-            a, b = lo[-1], hi[0]
-            return m[a] + (m[b] - m[a]) * (c - a) / (b - a)
+            a_, b_ = lo[-1], hi[0]
+            return m[a_] + (m[b_] - m[a_]) * (c - a_) / (b_ - a_)
         return m[lo[-1]] if lo else m[hi[0]]
 
+    def r5(v):
+        return max(1, int(round(v / 5.0) * 5))
+
     def resolve(r):
-        """[skill, kind, colors, auto]: kind = exact | classic | converted | ilvl."""
-        sm = (seemeta.get(r["prof"]) or {}).get(r["output_id"])
+        """[skill, kind, colors, auto]; kind = exact | classic | converted | yellow | ilvl | None."""
+        sm = sm_row(r)
         colors = (r.get("trainer") or {}).get("colors") or (sm["colors"] if sm and len(sm["colors"]) == 4 else None)
         auto = bool(sm and sm["source"].startswith("Learned automatically"))
-        k = known_skill(r) or (sm and sm["skill"])
+        k = exact(r)
         if k:
             return [k, "exact", colors, auto]
         yellow = colors[1] if colors else None
         cap = (lambda v: min(v, yellow) if yellow else v)
-        c = (classic.get(str(r["output_id"])) or {}).get(r["prof"])
-        if c and r["prof"] in ESTIMATE_PROFS:
+        c = classic_skill(r)
+        st = strategy.get(r["prof"])
+        if c and st == "classic":
+            return [cap(c), "classic", colors, auto]
+        if c and st == "converted":
             v = convert(r["prof"], c)
             if v is not None:
-                return [max(1, int(round(cap(v) / 5.0) * 5)), "converted", colors, auto]
-        if c:
-            return [cap(c), "classic", colors, auto]
-        if r["prof"] in models and ilvl.get(r["output"]):
+                return [r5(cap(v)), "converted", colors, auto]
+        if yellow and r["prof"] in gap:
+            return [r5(max(1, yellow - gap[r["prof"]])), "yellow", colors, auto]
+        if r["prof"] in models and r["output"] and ilvl.get(r["output"]):
             a0, b0 = models[r["prof"]]
-            return [max(1, min(300, int(round(cap(a0 + b0 * ilvl[r["output"]]) / 5.0) * 5))), "ilvl", colors, auto]
+            return [min(300, r5(cap(a0 + b0 * ilvl[r["output"]]))), "ilvl", colors, auto]
         return [None, None, colors, auto]
 
     data = {
@@ -144,9 +167,8 @@ def main():
     from collections import Counter
     kinds = Counter((r[1], r[10][1]) for r in data["recipes"])
     print("Skill sources:", dict(sorted(kinds.items(), key=lambda kv: (kv[0][0], str(kv[0][1])))))
-    print(f"Built: {len(data['recipes'])} recipes, {len(data['items'])} items, "
-          f"{len(markets)} markets, {len(s)//1024} KB. Models: "
-          + ", ".join(f"{p}: skill≈{c:.1f}+{b:.2f}×ilvl" for p, (c, b) in models.items()))
+    print("\n".join(report))
+    print(f"Built: {len(data['recipes'])} recipes, {len(data['items'])} items, {len(markets)} markets, {len(s)//1024} KB.")
 
 
 if __name__ == "__main__":

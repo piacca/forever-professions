@@ -15,7 +15,10 @@ from concurrent.futures import ThreadPoolExecutor
 
 import fetch_ah_prices as f
 
-PROFESSIONS = ["Alchemy", "First Aid", "Herbalism", "Tailoring", "Blacksmithing"]
+PROFESSIONS = ["Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Leatherworking", "Tailoring",
+               "Cooking", "First Aid", "Fishing", "Herbalism", "Mining", "Skinning"]
+# Professions whose recipes may create no item (enchants are applied to gear directly).
+NO_ITEM_OK = {"Enchanting"}
 # Items a vendor actually sells. The API gives every item a purchase price, so it can't tell us this.
 VENDOR_ITEMS = {
     "Empty Vial", "Leaded Vial", "Crystal Vial", "Imbued Vial", "Mild Spices", "Hot Spices", "Soothing Spices",
@@ -26,6 +29,11 @@ VENDOR_ITEMS = {
     "Black Dye", "Orange Dye", "Purple Dye", "Yellow Dye", "Weak Flux", "Strong Flux", "Coal",
 }
 SKIP_CATEGORIES = {"SEASON OF DISCOVERY"}
+
+
+def outputs_names(recipes):
+    """Crafted items aren't vendor reagents even if Classic sold them (keeps profit math honest)."""
+    return {r["output"] for r in recipes if r["output"]}
 
 
 QUALITY = {"POOR": 0, "COMMON": 1, "UNCOMMON": 2, "RARE": 3, "EPIC": 4, "LEGENDARY": 5, "ARTIFACT": 6}
@@ -105,15 +113,16 @@ def main():
                 if c["name"] in SKIP_CATEGORIES and not a.include_sod:
                     continue
                 for r in c.get("recipes", []):
-                    todo.append((p["name"], c["name"].title(), r["id"]))
+                    todo.append((p["name"], c["name"].title() if c["name"].isupper() else c["name"], r["id"]))
     print(f"{len(todo)} recipes; downloading details...")
     with ThreadPoolExecutor(8) as ex:
         details = list(ex.map(lambda x: g(f"/data/wow/recipe/{x[2]}"), todo))
 
     item_ids = set()
     for d in details:
-        if d and d.get("crafted_item"):
-            item_ids.add(d["crafted_item"]["id"])
+        if d:
+            if d.get("crafted_item"):
+                item_ids.add(d["crafted_item"]["id"])
             item_ids.update(r["reagent"]["id"] for r in d.get("reagents", []))
     ids = sorted(item_ids)
     print(f"{len(ids)} items; downloading details...")
@@ -123,7 +132,7 @@ def main():
     # Recipe items ("Recipe: X", "Manual: X") carry the skill needed to learn them.
     learn = {}  # crafted item id -> recipe-item info
     recipe_item_ids = set()
-    for sub in (6, 7, 2, 4):  # item class 9 (Recipe): 6 Alchemy, 7 First Aid, 2 Tailoring, 4 Blacksmithing
+    for sub in range(1, 10):  # item class 9 (Recipe): 1 LW, 2 Tailoring, 3 Eng, 4 BS, 5 Cooking, 6 Alchemy, 7 First Aid, 8 Enchanting, 9 Fishing
         page = 1
         while True:
             try:
@@ -137,6 +146,7 @@ def main():
             page += 1
     with ThreadPoolExecutor(8) as ex:
         ritems = list(ex.map(lambda i: g(f"/data/wow/item/{i}"), sorted(recipe_item_ids)))
+    learn_by_name = {}
     for ri in ritems:
         pv = (ri or {}).get("preview_item") or {}
         made = (((pv.get("recipe") or {}).get("item") or {}).get("item") or {}).get("id")
@@ -146,6 +156,13 @@ def main():
                            "profession": (sk.get("profession") or {}).get("name"),
                            "vbuy": ri.get("purchase_price") or None, "vsell": ri.get("sell_price") or None,
                            "quality": (ri.get("quality") or {}).get("name")}
+        if ri and ": " in ri["name"] and sk.get("level"):
+            # "Formula: Enchant Bracer - Minor Health" teaches the recipe "Enchant Bracer - Minor Health"
+            learn_by_name[ri["name"].split(": ", 1)[1]] = {
+                "item": ri["name"], "item_id": ri["id"], "skill": sk.get("level"),
+                "profession": (sk.get("profession") or {}).get("name"),
+                "vbuy": ri.get("purchase_price") or None, "vsell": ri.get("sell_price") or None,
+                "quality": (ri.get("quality") or {}).get("name")}
     print(f"{len(learn)} recipe items with skill requirements")
 
     # Trainer skill levels aren't in Blizzard's API. wowhead_skills.json holds them (copied from Wowhead's
@@ -165,34 +182,42 @@ def main():
     recipes, skipped = [], []
     for (prof, cat, rid), d in zip(todo, details):
         ci = (d or {}).get("crafted_item")
-        if not ci or not items.get(ci["id"]):
+        reag_ok = d and all(items.get(r["reagent"]["id"]) for r in d.get("reagents", []))
+        no_item = bool(d) and not ci and prof in NO_ITEM_OK and reag_ok and d.get("reagents")
+        if not no_item and (not ci or not items.get(ci["id"])):
             skipped.append((d or {}).get("name", rid))
             continue
-        out = items[ci["id"]]
+        out = items[ci["id"]] if ci else None
         recipes.append({
             "id": rid, "name": d["name"], "prof": prof, "cat": cat,
-            "output": out["name"], "output_id": ci["id"],
+            "output": out["name"] if out else None, "output_id": ci["id"] if ci else None,
             "yield": (d.get("crafted_quantity") or {}).get("value", 1),
-            "req": out.get("required_level") or 0,
-            "learn": learn.get(ci["id"]),
+            "req": (out or {}).get("required_level") or 0,
+            "learn": (learn.get(ci["id"]) if ci else None) or learn_by_name.get(d["name"]),
             "trainer": trainer_skills.get(d["name"]),
             "wowhead": wowhead_sources.get(d["name"]),
             "reagents": [{"qty": r["quantity"], "item": r["reagent"]["name"], "id": r["reagent"]["id"]}
                          for r in d.get("reagents", [])],
         })
-    outputs = {r["output_id"] for r in recipes}
+    outputs = {r["output_id"] for r in recipes if r["output_id"]}
+    vendor_names = set(VENDOR_ITEMS)
+    cv = os.path.join(f.DATA, "classic_vendor_items.json")
+    if os.path.exists(cv):
+        with open(cv, encoding="utf-8") as fh:
+            vendor_names |= set(json.load(fh)["items"])
+    vendor_names -= outputs_names(recipes)
     out_items = []
     for i, it in items.items():
         if not it:
             continue
         sub = (it.get("item_subclass") or {}).get("name", "")
         name = it["name"]
-        typ = ("herb" if sub == "Herb" else "vendor" if name in VENDOR_ITEMS
+        typ = ("herb" if sub == "Herb" else "vendor" if name in vendor_names
                else "product" if i in outputs else "reagent")
         pq = it.get("purchase_quantity") or 1
         out_items.append({
             "id": i, "name": name, "type": typ, "class": sub,
-            "vbuy": round(it["purchase_price"] / pq) if name in VENDOR_ITEMS and it.get("purchase_price") else None,
+            "vbuy": round(it["purchase_price"] / pq) if name in vendor_names and it.get("purchase_price") else None,
             "vsell": it.get("sell_price") or None,
             "ilvl": it.get("level"),
             "q": QUALITY.get((it.get("quality") or {}).get("type"), 1),
