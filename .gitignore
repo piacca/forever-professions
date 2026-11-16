@@ -7,3 +7,4 @@ data/item_ids.json
 __pycache__/
 *.pyc
 .DS_Store
+data/ah-state-house*.json

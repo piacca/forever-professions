@@ -16,6 +16,8 @@ Open `index.html` in a browser. Everything is in that one file, and nothing to i
 - **Click a recipe** to see each reagent's cost and where the price comes from (AH, vendor, or cheaper to craft), how to learn the recipe, and its skill-up colors
 - **Click an item name** to open its Wowhead Forever page in a new tab
 - **Hover an item** for an in-game style tooltip with its stats, effects, sell price, current AH price, and how many are listed
+- **Filters:** profitable only, minimum profit, minimum listed, minimum sold per day, how the recipe is learned, BoE/BoP recipe, plus search, category and skill range
+- **Listed and Sold/day:** how many are on the AH now, and an estimate of how many sell per day (see below)
 - **Thin markets** are flagged when 3 or fewer of an item are listed, since one listing can make a profit look much bigger than it is
 - **Settings:** AH cut, "I gather my own herbs", and backup
 
@@ -69,6 +71,7 @@ Other limits:
 
 - **Training costs** aren't in any source this project can read, so they're blank.
 - **Recipe sources:** BoP/BoE and reputation requirements come from Forever's own item data and are exact. Vendor, drop and quest sources come from Classic data, and are marked as such. Merchant's Favor and reputation unlocks are only known for Alchemy (from Wowhead). About 700 recipe items are new in Forever, and nothing this project can read says where they come from, so they're labelled "New in Forever".
+- **Sold/day is an estimate.** Blizzard's API has no sales data. `fetch_ah_prices.py` saves each snapshot's listings and, on the next run 15 minutes to 6 hours later, counts listings that disappeared while they still had LONG or VERY_LONG time left, plus partial buys from commodity stacks. A few of those are cancellations, so it slightly overstates sales. It keeps a 7-day rolling window in `data/ah-sales-house*.json`; run the script hourly for the best numbers.
 - **AH prices are asking prices, not sales.** Gear with random bonuses ("of the Bear") is pooled per item, and "only N listed" marks thin markets.
 - **Which house is which server type isn't published.** The API exposes 5 markets (each an Alliance, Horde and Blackwater house) but doesn't say which ruleset each belongs to.
 

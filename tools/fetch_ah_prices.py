@@ -180,12 +180,14 @@ def with_ns(url, ns):
     return urllib.parse.urlunparse(p._replace(query=urllib.parse.urlencode(q)))
 
 
-def collect_listings(auctions_json, kind, out):
+def collect_listings(auctions_json, kind, out, seen=None):
     for a in auctions_json.get("auctions") or []:
         item_id = (a.get("item") or {}).get("id")
         qty = a.get("quantity") or 0
         if not item_id or qty <= 0:
             continue
+        if seen is not None and a.get("id") is not None:
+            seen[a["id"]] = [item_id, int(qty), a.get("time_left")]
         if kind == "commodity":
             unit = a.get("unit_price")
         else:
@@ -195,6 +197,58 @@ def collect_listings(auctions_json, kind, out):
         if unit is None:  # bid-only listing: no usable asking price
             continue
         out.setdefault(item_id, []).append((float(unit), int(qty)))
+
+
+# Blizzard's API has no sales data. Estimate sales by comparing hourly snapshots: a listing that vanished while it
+# still had LONG/VERY_LONG time left was almost certainly bought (a few will be cancellations); a commodity
+# listing whose quantity dropped was partly bought.
+SALES_KEEP_DAYS = 7
+
+
+def track_sales(seen, tracked_ids, house_id, now):
+    state_path = os.path.join(DATA, f"ah-state-house{house_id}.json")      # last snapshot's listings (gitignored)
+    hist_path = os.path.join(DATA, f"ah-sales-house{house_id}.json")       # rolling sales windows
+    prev = None
+    if os.path.exists(state_path):
+        with open(state_path, encoding="utf-8") as fh:
+            prev = json.load(fh)
+    hist = {"windows": []}
+    if os.path.exists(hist_path):
+        with open(hist_path, encoding="utf-8") as fh:
+            hist = json.load(fh)
+    note = "first snapshot: sales estimates start with the next run (about an hour from now)"
+    if prev:
+        hours = (now - dt.datetime.fromisoformat(prev["t"])).total_seconds() / 3600
+        if 0.25 <= hours <= 6:
+            sold = {}
+            for aid, (item_id, qty, tl) in prev["auctions"].items():
+                cur = seen.get(int(aid))
+                if cur is None:
+                    if tl in ("LONG", "VERY_LONG"):
+                        sold[item_id] = sold.get(item_id, 0) + qty
+                elif cur[1] < qty:
+                    sold[item_id] = sold.get(item_id, 0) + qty - cur[1]
+            hist["windows"].append({"t": now.isoformat(timespec="seconds"), "hours": round(hours, 3),
+                                    "sold": {str(k): v for k, v in sold.items()}})
+            note = f"compared with the snapshot {hours:.1f} h earlier: {sum(sold.values()):,} items sold across {len(sold):,} tracked items"
+        else:
+            note = f"previous snapshot was {hours:.1f} h ago (needs 0.25-6 h), so this window wasn't counted"
+    cutoff = now - dt.timedelta(days=SALES_KEEP_DAYS)
+    hist["windows"] = [w for w in hist["windows"] if dt.datetime.fromisoformat(w["t"]) >= cutoff]
+    with open(hist_path, "w", encoding="utf-8") as fh:
+        json.dump(hist, fh, separators=(",", ":"))
+    with open(state_path, "w", encoding="utf-8") as fh:
+        json.dump({"t": now.isoformat(timespec="seconds"),
+                   "auctions": {str(k): v for k, v in seen.items() if v[0] in tracked_ids}}, fh, separators=(",", ":"))
+    total_h = sum(w["hours"] for w in hist["windows"])
+    per_day = {}
+    if total_h > 0:
+        tot = {}
+        for w in hist["windows"]:
+            for k, v in w["sold"].items():
+                tot[int(k)] = tot.get(int(k), 0) + v
+        per_day = {k: v / total_h * 24 for k, v in tot.items()}
+    return per_day, total_h, note
 
 
 def weighted_pct(listings, pct):
@@ -317,15 +371,15 @@ def main():
         url = with_ns(rebase(house["href"], api), ns)
         print(f"Downloading house {house['id']} ({house['name']}), ruleset {rs}, {a.region.upper()}...")
         main_json, hdr = http_json(url, token=token)
-        listings = {}
-        collect_listings(main_json, "auction", listings)
+        listings, seen = {}, {}
+        collect_listings(main_json, "auction", listings, seen)
         n_reg = sum(len(v) for v in listings.values())
         com_href = (main_json.get("commodities") or {}).get("href")
         n_com = 0
         if com_href:
             cj, _ = http_json(with_ns(rebase(com_href, api), ns), token=token)
             before = sum(len(v) for v in listings.values())
-            collect_listings(cj, "commodity", listings)
+            collect_listings(cj, "commodity", listings, seen)
             n_com = sum(len(v) for v in listings.values()) - before
         print(f"  {n_reg:,} regular + {n_com:,} commodity listings, {len(listings):,} distinct items")
 
@@ -352,6 +406,11 @@ def main():
             print(f"Resolving {len(rest)} item names to ids (cached after the first run)...")
             ids.update(resolve_ids(rest, api, a.region, token, os.path.join(DATA, "item_ids.json"), a.refresh_ids))
 
+        now = dt.datetime.now(dt.timezone.utc)
+        tracked_ids = {info["id"] for info in ids.values() if info and info.get("id")}
+        sold_day, sold_hours, sales_note = track_sales(seen, tracked_ids, house["id"], now)
+        print("Sales tracking: " + sales_note)
+
         prices, missing, unresolved = {}, [], []
         for name in names:
             info = ids.get(name)
@@ -371,14 +430,19 @@ def main():
                 "median": round(weighted_pct(ls, 0.50)),
                 "quantity": sum(q for _, q in ls),
                 "listings": len(ls),
+                "sold_day": round(sold_day.get(info["id"], 0.0), 1) if sold_hours else None,
             }
 
         snap = {
             "source": "wow-forever-ah",
-            "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+            "generated": now.isoformat(timespec="seconds"),
             "last_modified": hdr.get("Last-Modified"),
             "region": a.region, "ruleset": rs, "house": {"id": house["id"], "name": house["name"]},
             "listings_total": n_reg + n_com,
+            "sales_hours": round(sold_hours, 2),
+            # estimated units sold per day, including items that are currently sold out
+            "sold_day": {n: round(sold_day[ids[n]["id"]], 1) for n in names
+                         if ids.get(n) and ids[n].get("id") in sold_day and sold_day[ids[n]["id"]] > 0},
             "prices": prices, "no_listings": missing, "unresolved": unresolved,
         }
         out_path = a.out or os.path.join(DATA, f"ah-snapshot-house{house['id']}.json")

@@ -202,6 +202,8 @@ def main():
             "no_listings": d["no_listings"],
             "prices": {k: {"low": v["low"], "median": v["median"], "min": v["min"], "q": v["quantity"]}
                        for k, v in d["prices"].items()},
+            "sales_hours": d.get("sales_hours") or 0,
+            "sold": d.get("sold_day") or {},
         })
 
     page = os.path.join(ROOT, "index.html")
