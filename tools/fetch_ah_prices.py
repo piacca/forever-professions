@@ -221,13 +221,30 @@ def track_sales(seen, tracked_ids, house_id, now):
         hours = (now - dt.datetime.fromisoformat(prev["t"])).total_seconds() / 3600
         if 0.25 <= hours <= 6:
             sold = {}
+            prev_ids = set(prev["auctions"])
+            # New listings this hour, by (item, stack size). A vanished listing matched by a new one of the same
+            # item and size is treated as a cancel-and-repost (undercutting), not a sale.
+            reposts = {}
+            for aid, (item_id, qty, tl) in seen.items():
+                if item_id in tracked_ids and str(aid) not in prev_ids:
+                    reposts[(item_id, qty)] = reposts.get((item_id, qty), 0) + 1
+            kept = vanished = matched = 0
             for aid, (item_id, qty, tl) in prev["auctions"].items():
                 cur = seen.get(int(aid))
                 if cur is None:
-                    if tl in ("LONG", "VERY_LONG"):
-                        sold[item_id] = sold.get(item_id, 0) + qty
-                elif cur[1] < qty:
-                    sold[item_id] = sold.get(item_id, 0) + qty - cur[1]
+                    vanished += 1
+                    if tl not in ("LONG", "VERY_LONG"):
+                        continue          # could simply have expired
+                    if reposts.get((item_id, qty), 0) > 0:
+                        reposts[(item_id, qty)] -= 1
+                        matched += 1
+                        continue
+                    sold[item_id] = sold.get(item_id, 0) + qty
+                else:
+                    kept += 1
+                    if cur[1] < qty:
+                        sold[item_id] = sold.get(item_id, 0) + qty - cur[1]
+            print(f"  listings carried over {kept:,}/{len(prev_ids):,}; vanished {vanished:,}, of which {matched:,} matched a repost")
             hist["windows"].append({"t": now.isoformat(timespec="seconds"), "hours": round(hours, 3),
                                     "sold": {str(k): v for k, v in sold.items()}})
             note = f"compared with the snapshot {hours:.1f} h earlier: {sum(sold.values()):,} items sold across {len(sold):,} tracked items"
