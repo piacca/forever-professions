@@ -96,6 +96,57 @@ def main():
             return m[a_] + (m[b_] - m[a_]) * (c - a_) / (b_ - a_)
         return m[lo[-1]] if lo else m[hi[0]]
 
+    tt_by_name = {i["name"]: i.get("tt") or [] for i in fd["items"]}
+    csrc = load("classic_recipe_sources.json", "sources")
+
+    def source_info(r, auto):
+        """[kind, detail, bind] describing how the recipe is learned. kind is a short label for the table."""
+        learn = r.get("learn") or {}
+        wh = (r.get("wowhead") or {}).get("source") or []
+        whs = " ".join(wh)
+        ritem = learn.get("item")
+        if not ritem:
+            if auto:
+                return ["Automatic", "Learned automatically with the profession rank", None]
+            if whs.startswith("Special Trainer"):
+                return ["Special trainer", whs.split(":", 1)[1].strip(), None]
+            if whs.startswith("Quest"):
+                return ["Quest", whs, None]
+            tr = (r.get("trainer") or {}).get("trainers") or []
+            return ["Trainer", ("Taught by " + ", ".join(tr)) if tr else "Profession trainer", None]
+        tt = tt_by_name.get(ritem, [])
+        bind = "BoP" if any(t[0] == "Binds when picked up" for t in tt) else "BoE"
+        rep_req = next((t[0][len("Requires "):] for t in tt if t[0].startswith("Requires ") and " - " in t[0]), None)
+        m = re.search(r"(\d+) Merchant's Favor", whs)
+        unlock = re.search(r"Unlock: (.+?) (Friendly|Honored|Revered|Exalted)", whs)
+        if m:
+            det = f"{m.group(1)} Merchant's Favor"
+            if unlock:
+                det += f" · needs {unlock.group(1)} at {unlock.group(2)}"
+            return [f"Merchant's Favor", det, bind]
+        if whs.startswith("Drop"):
+            return ["Drop", whs.split(":", 1)[1].strip(), bind]
+        if whs.startswith("Quest") or "Carved Centaur Totem" in whs:
+            return ["Quest / tokens", " · ".join(wh), bind]
+        cs = csrc.get(ritem) or {}
+        vendor = f"{cs.get('name')}" if cs.get("category") == "Vendor" and cs.get("name") else None
+        if rep_req:
+            fac, standing = rep_req.rsplit(" - ", 1)
+            return ["Reputation", f"{fac} at {standing}" + (f" · sold by {vendor}" if vendor else ""), bind]
+        cat = cs.get("category")
+        if cat == "Vendor":
+            return ["Vendor", f"Sold by {cs.get('name')}" + (f" ({cs['faction']})" if cs.get("faction") in ("Alliance", "Horde") else "")
+                    + " · Classic data", bind]
+        if cat == "Boss Drop":
+            return ["Boss drop", f"{cs.get('name')}" + (f", {cs['zone_name']}" if cs.get("zone_name") else "") + " · Classic data", bind]
+        if cat in ("Rare Drop", "Zone Drop"):
+            return ["World drop", (f"Drops in {cs['zone_name']}" if cs.get("zone_name") else "Random world drop") + " · Classic data", bind]
+        if cat == "Quest":
+            return ["Quest", "Quest: " + ", ".join(cs.get("quests") or []) + " · Classic data", bind]
+        if (learn.get("item_id") or 0) >= 200000:
+            return ["New in Forever", "New recipe item in Forever. Where it drops or is sold isn't published in any data this project can read.", bind]
+        return ["Recipe item", "Where it drops or is sold isn't in any data this project can read (in Classic this recipe was trainer-taught or unlisted).", bind]
+
     def r5(v):
         return max(1, int(round(v / 5.0) * 5))
 
@@ -135,6 +186,7 @@ def main():
             if r.get("trainer") else None,
             [r["wowhead"]["skill"], r["wowhead"]["source"]] if r.get("wowhead") else None,
             resolve(r),
+            source_info(r, resolve(r)[3]),
         ] for r in fd["recipes"]],
     }
 
@@ -168,6 +220,8 @@ def main():
     kinds = Counter((r[1], r[10][1]) for r in data["recipes"])
     print("Skill sources:", dict(sorted(kinds.items(), key=lambda kv: (kv[0][0], str(kv[0][1])))))
     print("\n".join(report))
+    print("Learned-from kinds:", dict(Counter(r[11][0] for r in data["recipes"]).most_common()))
+    print("Recipes with skill-up colors:", sum(1 for r in data["recipes"] if r[10][2]), "/", len(data["recipes"]))
     print(f"Built: {len(data['recipes'])} recipes, {len(data['items'])} items, {len(markets)} markets, {len(s)//1024} KB.")
 
 

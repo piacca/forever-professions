@@ -1,0 +1,2655 @@
+{
+"source": "npm wow-classic-items@2.0.1 item.source (Classic Era)",
+"sources": {
+"Recipe: Westfall Stew": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 200
+},
+"Pattern: White Leather Jerkin": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Pattern: Fine Leather Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0004
+},
+"Pattern: Fine Leather Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0004
+},
+"Pattern: Dark Leather Tunic": {
+"category": "Rare Drop",
+"dropChance": 0.0004
+},
+"Recipe: Elixir of Minor Agility": {
+"category": "Rare Drop",
+"dropChance": 0.0005
+},
+"Recipe: Swiftness Potion": {
+"category": "Rare Drop",
+"dropChance": 0.0004
+},
+"Pattern: Red Linen Robe": {
+"category": "Rare Drop",
+"dropChance": 0.0015
+},
+"Pattern: Gray Woolen Robe": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Recipe: Seasoned Wolf Kabob": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 1600
+},
+"Recipe: Redridge Goulash": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 800
+},
+"Recipe: Succulent Pork Ribs": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 400
+},
+"Recipe: Goretusk Liver Pie": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 400
+},
+"Recipe: Cooked Crab Claw": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 400
+},
+"Plans: Runed Copper Breastplate": {
+"category": "Rare Drop",
+"dropChance": 0.0013
+},
+"Plans: Silvered Bronze Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Deadly Bronze Poniard": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Recipe: Beer Basted Boar Ribs": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 240
+},
+"Recipe: Minor Magic Resistance Potion": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Recipe: Elixir of Lesser Agility": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Recipe: Limited Invulnerability Potion": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Plans: Gemmed Copper Gauntlets": {
+"category": "Rare Drop",
+"dropChance": 0.0004
+},
+"Plans: Mighty Iron Hammer": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Copper Chain Vest": {
+"category": "Quest",
+"quests": [
+"Supplying the Front"
+]
+},
+"Plans: Green Iron Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Plans: Green Iron Gauntlets": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Recipe: Blood Sausage": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 320
+},
+"Recipe: Crocolisk Steak": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 400
+},
+"Recipe: Crocolisk Gumbo": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 1600
+},
+"Recipe: Curiously Tasty Omelet": {
+"category": "Quest",
+"quests": [
+"Ormer's Revenge"
+]
+},
+"Recipe: Murloc Fin Soup": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 1600
+},
+"Recipe: Gooey Spider Cake": {
+"category": "Vendor",
+"name": "Kendor Kabonka",
+"faction": "Alliance",
+"cost": 1440
+},
+"Recipe: Big Bear Steak": {
+"category": "Quest",
+"quests": [
+"The Rescue"
+]
+},
+"Recipe: Tasty Lion Steak": {
+"category": "Quest",
+"quests": [
+"Costly Menace"
+]
+},
+"Recipe: Hot Lion Chops": {
+"category": "Quest",
+"quests": [
+"Elixir of Pain"
+]
+},
+"Recipe: Soothing Turtle Bisque": {
+"category": "Quest",
+"quests": [
+"Soothing Turtle Bisque",
+"Soothing Turtle Bisque"
+]
+},
+"Recipe: Elixir of Fortitude": {
+"category": "Rare Drop",
+"dropChance": 0.0004
+},
+"Recipe: Elixir of Detect Lesser Invisibility": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Recipe: Major Troll's Blood Elixir": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Plans: Jade Serpentblade": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Plans: Golden Iron Destroyer": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Plans: Shadow Crescent Axe": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Frost Tiger Blade": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Green Iron Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Golden Scale Leggings": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Plans: Golden Scale Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Plans: Polished Steel Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Golden Scale Cuirass": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Golden Scale Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Pattern: Dark Leather Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Hillman's Leather Vest": {
+"category": "Rare Drop",
+"dropChance": 0.0004
+},
+"Pattern: Hillman's Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Green Woolen Bag": {
+"category": "Rare Drop",
+"dropChance": 0.0005
+},
+"Pattern: Guardian Armor": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Pattern: Barbaric Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Pattern: Guardian Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Pattern: Guardian Leather Bracers": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Barbaric Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Spider Silk Slippers": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Reinforced Woolen Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Red Woolen Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0006
+},
+"Pattern: Heavy Woolen Cloak": {
+"category": "Rare Drop",
+"dropChance": 0.0004
+},
+"Pattern: Phoenix Pants": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Shadow Hood": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Pattern: Phoenix Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Spider Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Boots of the Enchanter": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Rich Purple Silk Shirt": {
+"category": "Rare Drop",
+"dropChance": 0
+},
+"Pattern: Star Belt": {
+"category": "Rare Drop",
+"dropChance": 0
+},
+"Schematic: Small Seaforium Charge": {
+"category": "Rare Drop",
+"dropChance": 0.0005
+},
+"Schematic: Moonsight Rifle": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Schematic: Shadow Goggles": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Schematic: Discombobulator Ray": {
+"category": "Boss Drop",
+"name": "Mekgineer Thermaplugg",
+"zone": 721,
+"dropChance": 0.0052,
+"zone_name": "Gnomeregan"
+},
+"Schematic: Flame Deflector": {
+"category": "Boss Drop",
+"name": "Mekgineer Thermaplugg",
+"zone": 721,
+"dropChance": 0.0061,
+"zone_name": "Gnomeregan"
+},
+"Schematic: Portable Bronze Mortar": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Schematic: Craftsman's Monocle": {
+"category": "Rare Drop",
+"dropChance": 0.0005
+},
+"Schematic: Large Seaforium Charge": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Schematic: Goblin Land Mine": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Recipe: Barbecued Buzzard Wing": {
+"category": "Quest",
+"quests": [
+"Barbecued Buzzard Wings"
+]
+},
+"Recipe: Lesser Stoneshield Potion": {
+"category": "Quest",
+"quests": [
+"Liquid Stone"
+]
+},
+"Pattern: Kodo Hide Bag": {
+"category": "Quest",
+"quests": [
+"Kodo Hide Bag"
+]
+},
+"Recipe: Scorpid Surprise": {
+"category": "Vendor",
+"name": "Grimtak",
+"faction": "Horde",
+"cost": 140
+},
+"Recipe: Roasted Kodo Meat": {
+"category": "Vendor",
+"name": "Wunna Darkmane",
+"faction": "Horde",
+"cost": 228
+},
+"Recipe: Crispy Lizard Tail": {
+"category": "Vendor",
+"name": "Tari'qa",
+"faction": "Horde",
+"cost": 400
+},
+"Recipe: Fillet of Frenzy": {
+"category": "Vendor",
+"name": "Laird",
+"faction": "Alliance",
+"cost": 400
+},
+"Recipe: Strider Stew": {
+"category": "Vendor",
+"name": "Tari'qa",
+"faction": "Horde",
+"cost": 440
+},
+"Recipe: Dig Rat Stew": {
+"category": "Quest",
+"quests": [
+"Dig Rat Stew"
+]
+},
+"Recipe: Kaldorei Spider Kabob": {
+"category": "Quest",
+"quests": [
+"Recipe of the Kaldorei"
+]
+},
+"Plans: Iridescent Hammer": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Silvered Bronze Breastplate": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Red Woolen Bag": {
+"category": "Rare Drop",
+"dropChance": 0.0271
+},
+"Pattern: Robes of Arcana": {
+"category": "Rare Drop",
+"dropChance": 0.015
+},
+"Pattern: Green Silk Pack": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Red Linen Bag": {
+"category": "Rare Drop",
+"dropChance": 0.0139
+},
+"Pattern: Black Silk Pack": {
+"category": "Rare Drop",
+"dropChance": 0.0184
+},
+"Pattern: Murloc Scale Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0136
+},
+"Pattern: Murloc Scale Bracers": {
+"category": "Rare Drop",
+"dropChance": 0.0284
+},
+"Pattern: Thick Murloc Armor": {
+"category": "Rare Drop",
+"dropChance": 0.0173
+},
+"Pattern: Murloc Scale Breastplate": {
+"category": "Rare Drop",
+"dropChance": 0.0148
+},
+"Pattern: Fine Leather Pants": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Guardian Cloak": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Recipe: Giant Clam Scorcho": {
+"category": "Vendor",
+"name": "Kelsey Yance",
+"faction": "Both",
+"cost": 4500
+},
+"Plans: Iron Counterweight": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Steel Weapon Chain": {
+"category": "Rare Drop",
+"dropChance": 0
+},
+"Plans: Golden Scale Coif": {
+"category": "Vendor",
+"name": "Krinkle Goodsteel",
+"faction": "Both",
+"cost": 4400
+},
+"Plans: Iron Shield Spike": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Recipe: Elixir of Ogre's Strength": {
+"category": "Rare Drop",
+"dropChance": 0.0012
+},
+"Pattern: Red Linen Vest": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Recipe: Loch Frenzy Delight": {
+"category": "Vendor",
+"name": "Khara Deepwater",
+"faction": "Alliance",
+"cost": 400
+},
+"Pattern: Stylish Blue Shirt": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Stylish Green Shirt": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Manual: Strong Anti-Venom": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Deviate Scale Cloak": {
+"category": "Vendor",
+"name": "Kalldan Felmoon",
+"faction": "Both",
+"cost": 550
+},
+"Pattern: Deviate Scale Gloves": {
+"category": "Vendor",
+"name": "Kalldan Felmoon",
+"faction": "Both",
+"cost": 1500
+},
+"Pattern: Deviate Scale Belt": {
+"category": "Quest",
+"quests": [
+"Deviate Eradication"
+]
+},
+"Recipe: Elixir of Giant Growth": {
+"category": "Zone Drop",
+"zone": 17,
+"dropChance": 0.0006,
+"zone_name": "The Barrens"
+},
+"Recipe: Savory Deviate Delight": {
+"category": "Zone Drop",
+"zone": 17,
+"dropChance": 0.0006,
+"zone_name": "The Barrens"
+},
+"Schematic: Flash Bomb": {
+"category": "Quest",
+"quests": [
+"Flash Bomb Recipe"
+]
+},
+"Pattern: Moonglow Vest": {
+"category": "Quest",
+"quests": [
+"Moonglow Vest"
+]
+},
+"Schematic: EZ-Thro Dynamite": {
+"category": "Rare Drop",
+"dropChance": 0.0005
+},
+"Plans: Ironforge Breastplate": {
+"category": "Quest",
+"quests": [
+"Gearing Redridge"
+]
+},
+"Pattern: Crimson Silk Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Earthen Silk Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Crimson Silk Cloak": {
+"category": "Vendor",
+"name": "Xizk Goodstitch",
+"faction": "Both",
+"cost": 1200
+},
+"Pattern: Azure Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Crimson Silk Robe": {
+"category": "Vendor",
+"name": "Vizzklick",
+"faction": "Both",
+"cost": 5000
+},
+"Pattern: Truefaith Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0061
+},
+"Pattern: Green Silk Armor": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Hands of Darkness": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Rugged Leather Pants": {
+"category": "Rare Drop",
+"dropChance": 0.0004
+},
+"Pattern: Black Whelp Cloak": {
+"category": "Vendor",
+"name": "Clyde Ranthal",
+"faction": "Alliance",
+"cost": 649
+},
+"Pattern: Red Whelp Gloves": {
+"category": "Vendor",
+"name": "Wenna Silkbeard",
+"faction": "Alliance",
+"cost": 1440
+},
+"Pattern: Earthen Leather Shoulders": {
+"category": "Vendor",
+"name": "Zixil",
+"faction": "Both",
+"cost": 2000
+},
+"Pattern: Dark Leather Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Pilferer's Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Pattern: Herbalist's Gloves": {
+"category": "Vendor",
+"name": "Harlown Darkweave",
+"faction": "Alliance",
+"cost": 1440
+},
+"Pattern: Heavy Earthen Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Pattern: Dusky Boots": {
+"category": "Rare Drop",
+"dropChance": 0
+},
+"Pattern: Dusky Leather Leggings": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Green Whelp Armor": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Swift Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Schematic: Gnomish Universal Remote": {
+"category": "Boss Drop",
+"name": "Mekgineer Thermaplugg",
+"zone": 721,
+"dropChance": 0.0043,
+"zone_name": "Gnomeregan"
+},
+"Schematic: Goblin Jumper Cables": {
+"category": "Boss Drop",
+"name": "Mekgineer Thermaplugg",
+"zone": 721,
+"dropChance": 0.0018,
+"zone_name": "Gnomeregan"
+},
+"Schematic: Gnomish Cloaking Device": {
+"category": "Vendor",
+"name": "Zan Shivsproket",
+"faction": "Both",
+"cost": 2400
+},
+"Plans: Heavy Mithril Pants": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Plans: Mithril Shield Spike": {
+"category": "Rare Drop",
+"dropChance": 0.0113
+},
+"Plans: Barbaric Iron Shoulders": {
+"category": "Quest",
+"quests": [
+"On Iron Pauldrons"
+]
+},
+"Plans: Barbaric Iron Breastplate": {
+"category": "Quest",
+"quests": [
+"Barbaric Battlements"
+]
+},
+"Plans: Ornate Mithril Pants": {
+"category": "Quest",
+"quests": [
+"Smelt On, Smelt Off"
+]
+},
+"Plans: Barbaric Iron Boots": {
+"category": "Quest",
+"quests": [
+"Trampled Under Foot"
+]
+},
+"Plans: Barbaric Iron Helm": {
+"category": "Quest",
+"quests": [
+"Horns of Frenzy"
+]
+},
+"Plans: Barbaric Iron Gloves": {
+"category": "Quest",
+"quests": [
+"Joys of Omosh"
+]
+},
+"Plans: Ornate Mithril Gloves": {
+"category": "Quest",
+"quests": [
+"The Great Silver Deceiver"
+]
+},
+"Plans: Mithril Spurs": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Plans: Heavy Mithril Helm": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Plans: Blue Glittering Axe": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Plans: Dazzling Mithril Rapier": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Plans: Ebon Shiv": {
+"category": "Vendor",
+"name": "Magnus Frostwake",
+"faction": "Both",
+"cost": 10000
+},
+"Plans: Runed Mithril Hammer": {
+"category": "Rare Drop",
+"dropChance": 0.0232
+},
+"Plans: Wicked Mithril Blade": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Comfortable Leather Hat": {
+"category": "Rare Drop",
+"dropChance": 0
+},
+"Pattern: Turtle Scale Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Big Voodoo Pants": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Big Voodoo Robe": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Big Voodoo Mask": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Pattern: Big Voodoo Cloak": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Tough Scorpid Gloves": {
+"category": "Boss Drop",
+"name": "Wastewander Thief",
+"zone": 440,
+"dropChance": 0.0461,
+"zone_name": "Tanaris"
+},
+"Pattern: Tough Scorpid Bracers": {
+"category": "Boss Drop",
+"name": "Wastewander Shadow Mage",
+"zone": 440,
+"dropChance": 0.0497,
+"zone_name": "Tanaris"
+},
+"Pattern: Tough Scorpid Breastplate": {
+"category": "Boss Drop",
+"name": "Wastewander Bandit",
+"zone": 440,
+"dropChance": 0.0468,
+"zone_name": "Tanaris"
+},
+"Pattern: Tough Scorpid Shoulders": {
+"category": "Zone Drop",
+"zone": 440,
+"dropChance": 0.0433,
+"zone_name": "Tanaris"
+},
+"Pattern: Tough Scorpid Leggings": {
+"category": "Boss Drop",
+"name": "Wastewander Rogue",
+"zone": 440,
+"dropChance": 0.0466,
+"zone_name": "Tanaris"
+},
+"Pattern: Tough Scorpid Boots": {
+"category": "Boss Drop",
+"name": "Wastewander Rogue",
+"zone": 440,
+"dropChance": 0.046,
+"zone_name": "Tanaris"
+},
+"Pattern: Tough Scorpid Helm": {
+"category": "Zone Drop",
+"zone": 440,
+"dropChance": 0.0373,
+"zone_name": "Tanaris"
+},
+"Pattern: Wild Leather Vest": {
+"category": "Quest",
+"quests": [
+"Wild Leather Vest",
+"Wild Leather Vest"
+]
+},
+"Pattern: Wild Leather Helmet": {
+"category": "Quest",
+"quests": [
+"Wild Leather Helmet",
+"Wild Leather Helmet"
+]
+},
+"Pattern: Wild Leather Shoulders": {
+"category": "Quest",
+"quests": [
+"Wild Leather Shoulders",
+"Wild Leather Shoulders"
+]
+},
+"Pattern: Wild Leather Boots": {
+"category": "Quest",
+"quests": [
+"Wild Leather Boots",
+"Wild Leather Boots"
+]
+},
+"Pattern: Wild Leather Leggings": {
+"category": "Quest",
+"quests": [
+"Wild Leather Leggings",
+"Wild Leather Leggings"
+]
+},
+"Pattern: Wild Leather Cloak": {
+"category": "Quest",
+"quests": [
+"Master of the Wild Leather",
+"Master of the Wild Leather"
+]
+},
+"Recipe: Wildvine Potion": {
+"category": "Rare Drop",
+"dropChance": 0.0045
+},
+"Recipe: Magic Resistance Potion": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Recipe: Gift of Arthas": {
+"category": "Zone Drop",
+"zone": 28,
+"dropChance": 0.0079,
+"zone_name": "Western Plaguelands"
+},
+"Recipe: Invisibility Potion": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Recipe: Elixir of Giants": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Recipe: Transmute Iron to Gold": {
+"category": "Vendor",
+"name": "Alchemist Pestlezugg",
+"faction": "Both",
+"cost": 8000
+},
+"Recipe: Transmute Mithril to Truesilver": {
+"category": "Vendor",
+"name": "Alchemist Pestlezugg",
+"faction": "Both",
+"cost": 8000
+},
+"Recipe: Philosopher's Stone": {
+"category": "Vendor",
+"name": "Alchemist Pestlezugg",
+"faction": "Both",
+"cost": 8000
+},
+"Plans: Golden Scale Gauntlets": {
+"category": "Quest",
+"quests": [
+"The Origins of Smithing"
+]
+},
+"Pattern: Red Mageweave Pants": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Pattern: Red Mageweave Vest": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: White Bandit Mask": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Pattern: Red Mageweave Headband": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Red Mageweave Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Pattern: Red Mageweave Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Colorful Kilt": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Admiral's Hat": {
+"category": "Vendor",
+"name": "Cowardly Crosby",
+"faction": "Both",
+"cost": 7000
+},
+"Plans: Silvered Bronze Leggings": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Pattern: Shadoweave Mask": {
+"category": "Quest",
+"quests": [
+"The Undermarket"
+]
+},
+"Schematic: Bright-Eye Goggles": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Schematic: Catseye Ultra Goggles": {
+"category": "Rare Drop",
+"dropChance": 0.0001
+},
+"Schematic: Spellpower Goggles Xtreme": {
+"category": "Rare Drop",
+"dropChance": 0.0116
+},
+"Schematic: Mithril Heavy-bore Rifle": {
+"category": "Rare Drop",
+"dropChance": 0.0002
+},
+"Schematic: Deepdive Helmet": {
+"category": "Vendor",
+"name": "Jubie Gadgetspring",
+"faction": "Both",
+"cost": 3600
+},
+"Schematic: Sniper Scope": {
+"category": "Rare Drop",
+"dropChance": 0.0205
+},
+"Schematic: Parachute Cloak": {
+"category": "Rare Drop",
+"dropChance": 0.0003
+},
+"Schematic: Mithril Mechanical Dragonling": {
+"category": "Vendor",
+"name": "Ruppo Zipcoil",
+"faction": "Both",
+"cost": 4000
+},
+"Pattern: Black Swashbuckler's Shirt": {
+"category": "Vendor",
+"name": "Narkk",
+"faction": "Both",
+"cost": 1500
+},
+"Plans: Dark Iron Pulverizer": {
+"category": "Boss Drop",
+"name": "Grizzle",
+"zone": 1584,
+"dropChance": 0.9289,
+"zone_name": "Blackrock Depths"
+},
+"Plans: Dark Iron Plate": {
+"category": "Boss Drop",
+"name": "Ribbly Screwspigot",
+"zone": 1584,
+"dropChance": 0.1412,
+"zone_name": "Blackrock Depths"
+},
+"Plans: Dark Iron Sunderer": {
+"category": "Zone Drop",
+"zone": 1584,
+"dropChance": 0.0571,
+"zone_name": "Blackrock Depths"
+},
+"Plans: Moonsteel Broadsword": {
+"category": "Vendor",
+"name": "Zarena Cromwind",
+"faction": "Both",
+"cost": 4400
+},
+"Recipe: Crispy Bat Wing": {
+"category": "Vendor",
+"name": "Abigail Shiel",
+"faction": "Horde",
+"cost": 25
+},
+"Recipe: Lean Wolf Steak": {
+"category": "Vendor",
+"name": "Super-Seller 680",
+"faction": "Both",
+"cost": 1600
+},
+"Plans: Searing Golden Blade": {
+"category": "Rare Drop",
+"dropChance": 0
+},
+"Plans: Thorium Armor": {
+"category": "Rare Drop",
+"dropChance": 0.0032
+},
+"Plans: Thorium Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0055
+},
+"Plans: Imperial Plate Shoulders": {
+"category": "Quest",
+"quests": [
+"Imperial Plate Shoulders"
+]
+},
+"Plans: Radiant Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0112
+},
+"Plans: Thorium Bracers": {
+"category": "Rare Drop",
+"dropChance": 0.0033
+},
+"Plans: Imperial Plate Belt": {
+"category": "Quest",
+"quests": [
+"Imperial Plate Belt"
+]
+},
+"Plans: Thorium Helm": {
+"category": "Rare Drop",
+"dropChance": 0.0018
+},
+"Plans: Radiant Breastplate": {
+"category": "Rare Drop",
+"dropChance": 0.0034
+},
+"Plans: Imperial Plate Bracers": {
+"category": "Quest",
+"quests": [
+"Imperial Plate Bracer"
+]
+},
+"Plans: Thorium Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0019
+},
+"Plans: Dawnbringer Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0082
+},
+"Plans: Imperial Plate Helm": {
+"category": "Quest",
+"quests": [
+"Imperial Plate Helm"
+]
+},
+"Plans: Radiant Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0021
+},
+"Plans: Fiery Plate Gauntlets": {
+"category": "Quest",
+"quests": [
+"Fiery Plate Gauntlets"
+]
+},
+"Plans: Thorium Shield Spike": {
+"category": "Rare Drop",
+"dropChance": 0.009
+},
+"Plans: Radiant Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0015
+},
+"Plans: Imperial Plate Boots": {
+"category": "Quest",
+"quests": [
+"Imperial Plate Boots"
+]
+},
+"Plans: Thorium Leggings": {
+"category": "Rare Drop",
+"dropChance": 0.0025
+},
+"Plans: Radiant Circlet": {
+"category": "Rare Drop",
+"dropChance": 0.0072
+},
+"Plans: Imperial Plate Chest": {
+"category": "Quest",
+"quests": [
+"Imperial Plate Chest"
+]
+},
+"Plans: Runic Plate Boots": {
+"category": "Boss Drop",
+"name": "Scarlet Cavalier",
+"zone": 28,
+"dropChance": 0.0242,
+"zone_name": "Western Plaguelands"
+},
+"Plans: Runic Plate Shoulders": {
+"category": "Boss Drop",
+"name": "Strashaz Serpent Guard",
+"zone": 15,
+"dropChance": 0.0225,
+"zone_name": "Dustwallow Marsh"
+},
+"Plans: Whitesoul Helm": {
+"category": "Rare Drop",
+"dropChance": 0.0145
+},
+"Plans: Radiant Leggings": {
+"category": "Rare Drop",
+"dropChance": 0.0058
+},
+"Plans: Runic Plate Helm": {
+"category": "Boss Drop",
+"name": "Strashaz Warrior",
+"zone": 15,
+"dropChance": 0.021,
+"zone_name": "Dustwallow Marsh"
+},
+"Plans: Imperial Plate Leggings": {
+"category": "Quest",
+"quests": [
+"Imperial Plate Leggings"
+]
+},
+"Plans: Runic Breastplate": {
+"category": "Zone Drop",
+"zone": 15,
+"dropChance": 0.0361,
+"zone_name": "Dustwallow Marsh"
+},
+"Plans: Runic Plate Leggings": {
+"category": "Boss Drop",
+"name": "Scarlet Smith",
+"zone": 28,
+"dropChance": 0.9357,
+"zone_name": "Western Plaguelands"
+},
+"Plans: Lionheart Helm": {
+"category": "Rare Drop",
+"dropChance": 0.0053
+},
+"Plans: Enchanted Thorium Leggings": {
+"category": "Quest",
+"quests": [
+"Enchanted Thorium Platemail: Volume II"
+]
+},
+"Plans: Enchanted Thorium Helm": {
+"category": "Quest",
+"quests": [
+"Enchanted Thorium Platemail: Volume III"
+]
+},
+"Plans: Enchanted Thorium Breastplate": {
+"category": "Quest",
+"quests": [
+"Enchanted Thorium Platemail: Volume I"
+]
+},
+"Plans: Ornate Thorium Handaxe": {
+"category": "Vendor",
+"name": "Magnus Frostwake",
+"faction": "Both",
+"cost": 16000
+},
+"Plans: Enchanted Battlehammer": {
+"category": "Quest",
+"quests": [
+"Sweet Serenity",
+"Sweet Serenity"
+]
+},
+"Plans: Dawn's Edge": {
+"category": "Quest",
+"quests": [
+"Snakestone of the Shadow Huntress"
+]
+},
+"Plans: Blazing Rapier": {
+"category": "Quest",
+"quests": [
+"Corruption"
+]
+},
+"Plans: Huge Thorium Battleaxe": {
+"category": "Vendor",
+"name": "Magnus Frostwake",
+"faction": "Both",
+"cost": 20000
+},
+"Plans: Arcanite Champion": {
+"category": "Boss Drop",
+"name": "Goraluk Anvilcrack",
+"zone": 1583,
+"dropChance": 0.0867,
+"zone_name": "Blackrock Spire"
+},
+"Plans: Volcanic Hammer": {
+"category": "Rare Drop",
+"dropChance": 0.6879
+},
+"Plans: Hammer of the Titans": {
+"category": "Boss Drop",
+"name": "Maleki the Pallid",
+"zone": 2017,
+"dropChance": 0.0791,
+"zone_name": "Stratholme"
+},
+"Plans: Annihilator": {
+"category": "Boss Drop",
+"name": "Quartermaster Zigris",
+"zone": 1583,
+"dropChance": 0.1263,
+"zone_name": "Blackrock Spire"
+},
+"Plans: Masterwork Stormhammer": {
+"category": "Boss Drop",
+"name": "Goraluk Anvilcrack",
+"zone": 1583,
+"dropChance": 0.0882,
+"zone_name": "Blackrock Spire"
+},
+"Plans: Frostguard": {
+"category": "Boss Drop",
+"name": "Foreman Marcrid",
+"zone": 28,
+"dropChance": 0.928,
+"zone_name": "Western Plaguelands"
+},
+"Plans: Heartseeker": {
+"category": "Boss Drop",
+"name": "Cannon Master Willey",
+"zone": 2017,
+"dropChance": 0.0877,
+"zone_name": "Stratholme"
+},
+"Plans: Arcanite Reaper": {
+"category": "Boss Drop",
+"name": "Bannok Grimaxe",
+"zone": 1583,
+"dropChance": 0.0839,
+"zone_name": "Blackrock Spire"
+},
+"Recipe: Transmute Arcanite": {
+"category": "Vendor",
+"name": "Alchemist Pestlezugg",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Raptor Hide Harness": {
+"category": "Vendor",
+"name": "Tunkk",
+"faction": "Horde",
+"cost": 2500
+},
+"Pattern: Raptor Hide Belt": {
+"category": "Vendor",
+"name": "Androd Fadran",
+"faction": "Alliance",
+"cost": 2500
+},
+"Schematic: Ice Deflector": {
+"category": "Vendor",
+"name": "Rizz Loosebolt",
+"faction": "Both",
+"cost": 1800
+},
+"Schematic: Accurate Scope": {
+"category": "Vendor",
+"name": "Mazk Snipeshot",
+"faction": "Both",
+"cost": 2000
+},
+"Schematic: Mechanical Dragonling": {
+"category": "Vendor",
+"name": "Gnaz Blunderflame",
+"faction": "Both",
+"cost": 10000
+},
+"Recipe: Elixir of the Sages": {
+"category": "Zone Drop",
+"zone": 139,
+"dropChance": 0.0196,
+"zone_name": "Eastern Plaguelands"
+},
+"Recipe: Mighty Rage Potion": {
+"category": "Boss Drop",
+"name": "Blackrock Slayer",
+"zone": 46,
+"dropChance": 0.038,
+"zone_name": "Burning Steppes"
+},
+"Recipe: Transmute Water to Air": {
+"category": "Vendor",
+"name": "Magnus Frostwake",
+"faction": "Both",
+"cost": 15000
+},
+"Recipe: Transmute Water to Undeath": {
+"category": "Rare Drop",
+"dropChance": 0.0129
+},
+"Recipe: Transmute Undeath to Water": {
+"category": "Rare Drop",
+"dropChance": 0.0143
+},
+"Recipe: Transmute Life to Earth": {
+"category": "Rare Drop",
+"dropChance": 0.0123
+},
+"Recipe: Greater Stoneshield Potion": {
+"category": "Rare Drop",
+"dropChance": 0.0014
+},
+"Recipe: Greater Arcane Protection Potion": {
+"category": "Boss Drop",
+"name": "Cobalt Mageweaver",
+"zone": 618,
+"dropChance": 0.0959,
+"zone_name": "Winterspring"
+},
+"Recipe: Transmute Earth to Life": {
+"category": "Rare Drop",
+"dropChance": 0.0113
+},
+"Recipe: Elixir of the Mongoose": {
+"category": "Rare Drop",
+"dropChance": 0.0426
+},
+"Recipe: Purification Potion": {
+"category": "Rare Drop",
+"dropChance": 0.002
+},
+"Recipe: Greater Arcane Elixir": {
+"category": "Rare Drop",
+"dropChance": 0.0063
+},
+"Recipe: Greater Fire Protection Potion": {
+"category": "Zone Drop",
+"zone": 1583,
+"dropChance": 0.0373,
+"zone_name": "Blackrock Spire"
+},
+"Recipe: Greater Nature Protection Potion": {
+"category": "Zone Drop",
+"zone": 28,
+"dropChance": 0.0325,
+"zone_name": "Western Plaguelands"
+},
+"Recipe: Greater Frost Protection Potion": {
+"category": "Boss Drop",
+"name": "Frostmaul Giant",
+"zone": 618,
+"dropChance": 0.0519,
+"zone_name": "Winterspring"
+},
+"Recipe: Greater Shadow Protection Potion": {
+"category": "Zone Drop",
+"zone": 139,
+"dropChance": 0.0174,
+"zone_name": "Eastern Plaguelands"
+},
+"Recipe: Major Mana Potion": {
+"category": "Vendor",
+"name": "Magnus Frostwake",
+"faction": "Both",
+"cost": 30000
+},
+"Recipe: Alchemist's Stone": {
+"category": "Vendor",
+"name": "Almaador",
+"faction": "Both",
+"cost": 72000
+},
+"Recipe: Flask of the Titans": {
+"category": "Vendor",
+"name": "Almaador",
+"faction": "Both",
+"cost": 36000
+},
+"Recipe: Flask of Chromatic Resistance": {
+"category": "Vendor",
+"name": "Nakodu",
+"faction": "Both",
+"cost": 36000
+},
+"Recipe: Flask of Distilled Wisdom": {
+"category": "Vendor",
+"name": "Fedryen Swiftspear",
+"faction": "Both",
+"cost": 36000
+},
+"Recipe: Flask of Supreme Power": {
+"category": "Vendor",
+"name": "Alurmi",
+"faction": "Both",
+"cost": 36000
+},
+"Recipe: Spotted Yellowtail": {
+"category": "Vendor",
+"name": "Gikkix",
+"faction": "Both",
+"cost": 16000
+},
+"Recipe: Cooked Glossy Mightfish": {
+"category": "Vendor",
+"name": "Kelsey Yance",
+"faction": "Both",
+"cost": 14400
+},
+"Recipe: Hot Smoked Bass": {
+"category": "Vendor",
+"name": "Kelsey Yance",
+"faction": "Both",
+"cost": 14400
+},
+"Recipe: Grilled Squid": {
+"category": "Vendor",
+"name": "Gikkix",
+"faction": "Both",
+"cost": 16000
+},
+"Recipe: Nightfin Soup": {
+"category": "Vendor",
+"name": "Gikkix",
+"faction": "Both",
+"cost": 20000
+},
+"Recipe: Poached Sunscale Salmon": {
+"category": "Vendor",
+"name": "Gikkix",
+"faction": "Both",
+"cost": 20000
+},
+"Pattern: Frostweave Tunic": {
+"category": "Rare Drop",
+"dropChance": 0.002
+},
+"Pattern: Frostweave Robe": {
+"category": "Rare Drop",
+"dropChance": 0.0036
+},
+"Pattern: Runecloth Bag": {
+"category": "Vendor",
+"name": "Qia",
+"faction": "Both",
+"cost": 10800
+},
+"Pattern: Cindercloth Gloves": {
+"category": "Boss Drop",
+"name": "Twilight Fire Guard",
+"zone": 51,
+"dropChance": 0.0359,
+"zone_name": "Searing Gorge"
+},
+"Pattern: Cindercloth Vest": {
+"category": "Boss Drop",
+"name": "Twilight Fire Guard",
+"zone": 51,
+"dropChance": 0.0371,
+"zone_name": "Searing Gorge"
+},
+"Pattern: Runecloth Tunic": {
+"category": "Rare Drop",
+"dropChance": 0.0033
+},
+"Pattern: Frostweave Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.0027
+},
+"Pattern: Cindercloth Cloak": {
+"category": "Boss Drop",
+"name": "Thaurissan Firewalker",
+"zone": 46,
+"dropChance": 0.0335,
+"zone_name": "Burning Steppes"
+},
+"Pattern: Felcloth Pants": {
+"category": "Vendor",
+"name": "Lorelae Wintersong",
+"faction": "Both",
+"cost": 15200
+},
+"Pattern: Frostweave Pants": {
+"category": "Rare Drop",
+"dropChance": 0.0009
+},
+"Pattern: Felcloth Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0013
+},
+"Pattern: Robe of Winter Night": {
+"category": "Boss Drop",
+"name": "Cobalt Mageweaver",
+"zone": 618,
+"dropChance": 0.057,
+"zone_name": "Winterspring"
+},
+"Pattern: Brightcloth Pants": {
+"category": "Rare Drop",
+"dropChance": 0.0024
+},
+"Pattern: Cindercloth Pants": {
+"category": "Boss Drop",
+"name": "Thaurissan Firewalker",
+"zone": 46,
+"dropChance": 0.0352,
+"zone_name": "Burning Steppes"
+},
+"Pattern: Mooncloth Leggings": {
+"category": "Rare Drop",
+"dropChance": 0.0065
+},
+"Pattern: Mooncloth Bag": {
+"category": "Rare Drop",
+"dropChance": 0.0017
+},
+"Pattern: Felcloth Hood": {
+"category": "Rare Drop",
+"dropChance": 0.0011
+},
+"Pattern: Mooncloth Vest": {
+"category": "Rare Drop",
+"dropChance": 0.0069
+},
+"Pattern: Mooncloth Circlet": {
+"category": "Rare Drop",
+"dropChance": 0.0084
+},
+"Pattern: Felcloth Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0032
+},
+"Pattern: Mooncloth Shoulders": {
+"category": "Rare Drop",
+"dropChance": 0.0064
+},
+"Pattern: Felcloth Robe": {
+"category": "Rare Drop",
+"dropChance": 0.0029
+},
+"Pattern: Bottomless Bag": {
+"category": "Rare Drop",
+"dropChance": 0.0083
+},
+"Pattern: Gloves of Spell Mastery": {
+"category": "Rare Drop",
+"dropChance": 0.0064
+},
+"Pattern: Truefaith Vestments": {
+"category": "Zone Drop",
+"zone": 2017,
+"dropChance": 0.0556,
+"zone_name": "Stratholme"
+},
+"Pattern: Robe of the Archmage": {
+"category": "Boss Drop",
+"name": "Firebrand Pyromancer",
+"zone": 1583,
+"dropChance": 0.1511,
+"zone_name": "Blackrock Spire"
+},
+"Pattern: Robe of the Void": {
+"category": "Boss Drop",
+"name": "Darkmaster Gandling",
+"zone": 2057,
+"dropChance": 0.0853,
+"zone_name": "Scholomance"
+},
+"Pattern: Mooncloth": {
+"category": "Vendor",
+"name": "Qia",
+"faction": "Both",
+"cost": 20000
+},
+"Pattern: Bright Yellow Shirt": {
+"category": "Vendor",
+"name": "Danielle Zipstitch",
+"faction": "Alliance",
+"cost": 720
+},
+"Pattern: Enchanter's Cowl": {
+"category": "Vendor",
+"name": "Xizk Goodstitch",
+"faction": "Both",
+"cost": 1000
+},
+"Recipe: Frost Oil": {
+"category": "Vendor",
+"name": "Bro'kin",
+"faction": "Both",
+"cost": 2500
+},
+"Pattern: Gem-studded Leather Belt": {
+"category": "Vendor",
+"name": "Rikqiz",
+"faction": "Both",
+"cost": 3000
+},
+"Pattern: Heavy Scorpid Bracers": {
+"category": "Vendor",
+"name": "Zannok Hidepiercer",
+"faction": "Both",
+"cost": 12000
+},
+"Pattern: Heavy Scorpid Vest": {
+"category": "Zone Drop",
+"zone": 4,
+"dropChance": 0.1303,
+"zone_name": "Blasted Lands"
+},
+"Pattern: Wicked Leather Bracers": {
+"category": "Boss Drop",
+"name": "Legashi Rogue",
+"zone": 16,
+"dropChance": 0.043,
+"zone_name": "Azshara"
+},
+"Pattern: Runic Leather Gauntlets": {
+"category": "Rare Drop",
+"dropChance": 0.0024
+},
+"Pattern: Red Dragonscale Breastplate": {
+"category": "Boss Drop",
+"name": "General Drakkisath",
+"zone": 1583,
+"dropChance": 0.0488,
+"zone_name": "Blackrock Spire"
+},
+"Pattern: Chimeric Gloves": {
+"category": "Vendor",
+"name": "Blimo Gadgetspring",
+"faction": "Both",
+"cost": 12000
+},
+"Pattern: Green Dragonscale Breastplate": {
+"category": "Vendor",
+"name": "Masat T'andr",
+"faction": "Both",
+"cost": 12000
+},
+"Pattern: Volcanic Leggings": {
+"category": "Boss Drop",
+"name": "Firegut Brute",
+"zone": 46,
+"dropChance": 0.0528,
+"zone_name": "Burning Steppes"
+},
+"Pattern: Green Dragonscale Leggings": {
+"category": "Boss Drop",
+"name": "Murk Worm",
+"zone": 1477,
+"dropChance": 0.0248,
+"zone_name": "The Temple of Atal'Hakkar"
+},
+"Pattern: Ironfeather Shoulders": {
+"category": "Vendor",
+"name": "Gigget Zipcoil",
+"faction": "Both",
+"cost": 14000
+},
+"Pattern: Chimeric Boots": {
+"category": "Rare Drop",
+"dropChance": 0.0031
+},
+"Pattern: Heavy Scorpid Gauntlets": {
+"category": "Boss Drop",
+"name": "Blackrock Soldier",
+"zone": 46,
+"dropChance": 0.0412,
+"zone_name": "Burning Steppes"
+},
+"Pattern: Runic Leather Bracers": {
+"category": "Boss Drop",
+"name": "Jaedenar Cultist",
+"zone": 361,
+"dropChance": 0.0438,
+"zone_name": "Felwood"
+},
+"Pattern: Frostsaber Boots": {
+"category": "Vendor",
+"name": "Qia",
+"faction": "Both",
+"cost": 16000
+},
+"Pattern: Volcanic Breastplate": {
+"category": "Boss Drop",
+"name": "Firebrand Grunt",
+"zone": 1583,
+"dropChance": 0.0353,
+"zone_name": "Blackrock Spire"
+},
+"Pattern: Warbear Harness": {
+"category": "Vendor",
+"name": "Meilosh",
+"faction": "Both",
+"cost": 15200
+},
+"Pattern: Wicked Leather Headband": {
+"category": "Boss Drop",
+"name": "Jadefire Trickster",
+"zone": 361,
+"dropChance": 0.0177,
+"zone_name": "Felwood"
+},
+"Pattern: Heavy Scorpid Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0026
+},
+"Pattern: Runic Leather Belt": {
+"category": "Rare Drop",
+"dropChance": 0.0014
+},
+"Pattern: Heavy Scorpid Leggings": {
+"category": "Boss Drop",
+"name": "Blackrock Slayer",
+"zone": 46,
+"dropChance": 0.0385,
+"zone_name": "Burning Steppes"
+},
+"Pattern: Chimeric Leggings": {
+"category": "Rare Drop",
+"dropChance": 0.0018
+},
+"Pattern: Frostsaber Leggings": {
+"category": "Boss Drop",
+"name": "Winterfall Den Watcher",
+"zone": 618,
+"dropChance": 0.0327,
+"zone_name": "Winterspring"
+},
+"Pattern: Stormshroud Armor": {
+"category": "Boss Drop",
+"name": "Arkkoran Oracle",
+"zone": 16,
+"dropChance": 0.0218,
+"zone_name": "Azshara"
+},
+"Pattern: Blue Dragonscale Breastplate": {
+"category": "Vendor",
+"name": "Blimo Gadgetspring",
+"faction": "Both",
+"cost": 20000
+},
+"Pattern: Living Leggings": {
+"category": "Boss Drop",
+"name": "Deadwood Shaman",
+"zone": 361,
+"dropChance": 0.0175,
+"zone_name": "Felwood"
+},
+"Pattern: Chimeric Vest": {
+"category": "Rare Drop",
+"dropChance": 0.0021
+},
+"Pattern: Wicked Leather Pants": {
+"category": "Rare Drop",
+"dropChance": 0.001
+},
+"Pattern: Devilsaur Gauntlets": {
+"category": "Vendor",
+"name": "Nergal",
+"faction": "Both",
+"cost": 22000
+},
+"Pattern: Ironfeather Breastplate": {
+"category": "Boss Drop",
+"name": "Vilebranch Hideskinner",
+"zone": 47,
+"dropChance": 0.0418,
+"zone_name": "The Hinterlands"
+},
+"Pattern: Black Dragonscale Breastplate": {
+"category": "Vendor",
+"name": "Plugger Spazzring",
+"faction": "Both",
+"cost": 22000
+},
+"Pattern: Frostsaber Gloves": {
+"category": "Boss Drop",
+"name": "Winterfall Totemic",
+"zone": 618,
+"dropChance": 0.0337,
+"zone_name": "Winterspring"
+},
+"Pattern: Heavy Scorpid Helm": {
+"category": "Vendor",
+"name": "Zannok Hidepiercer",
+"faction": "Both",
+"cost": 25000
+},
+"Pattern: Blue Dragonscale Shoulders": {
+"category": "Boss Drop",
+"name": "Cliff Breaker",
+"zone": 16,
+"dropChance": 0.072,
+"zone_name": "Azshara"
+},
+"Pattern: Stormshroud Shoulders": {
+"category": "Boss Drop",
+"name": "Son of Arkkoroc",
+"zone": 16,
+"dropChance": 0.0659,
+"zone_name": "Azshara"
+},
+"Pattern: Runic Leather Pants": {
+"category": "Rare Drop",
+"dropChance": 0.003
+},
+"Pattern: Devilsaur Leggings": {
+"category": "Zone Drop",
+"zone": 490,
+"dropChance": 0.0067,
+"zone_name": "Un'Goro Crater"
+},
+"Pattern: Living Breastplate": {
+"category": "Boss Drop",
+"name": "Decaying Horror",
+"zone": 28,
+"dropChance": 0.0288,
+"zone_name": "Western Plaguelands"
+},
+"Pattern: Wicked Leather Belt": {
+"category": "Boss Drop",
+"name": "Ghoul Ravener",
+"zone": 2017,
+"dropChance": 0.0121,
+"zone_name": "Stratholme"
+},
+"Pattern: Black Dragonscale Shoulders": {
+"category": "Boss Drop",
+"name": "Anvilrage Marshal",
+"zone": 1584,
+"dropChance": 0.0292,
+"zone_name": "Blackrock Depths"
+},
+"Pattern: Wicked Leather Armor": {
+"category": "Boss Drop",
+"name": "Spectral Researcher",
+"zone": 2057,
+"dropChance": 0.0364,
+"zone_name": "Scholomance"
+},
+"Pattern: Heavy Scorpid Shoulders": {
+"category": "Boss Drop",
+"name": "Blackrock Battlemaster",
+"zone": 46,
+"dropChance": 0.0205,
+"zone_name": "Burning Steppes"
+},
+"Pattern: Runic Leather Armor": {
+"category": "Boss Drop",
+"name": "Scholomance Dark Summoner",
+"zone": 2057,
+"dropChance": 0.0151,
+"zone_name": "Scholomance"
+},
+"Pattern: Volcanic Shoulders": {
+"category": "Boss Drop",
+"name": "Firebrand Legionnaire",
+"zone": 1583,
+"dropChance": 0.1542,
+"zone_name": "Blackrock Spire"
+},
+"Pattern: Runic Leather Shoulders": {
+"category": "Boss Drop",
+"name": "Crimson Battle Mage",
+"zone": 2017,
+"dropChance": 0.0142,
+"zone_name": "Stratholme"
+},
+"Pattern: Frostsaber Tunic": {
+"category": "Boss Drop",
+"name": "Winterfall Ursa",
+"zone": 618,
+"dropChance": 0.0145,
+"zone_name": "Winterspring"
+},
+"Pattern: Black Dragonscale Leggings": {
+"category": "Boss Drop",
+"name": "Anvilrage Captain",
+"zone": 1584,
+"dropChance": 0.0327,
+"zone_name": "Blackrock Depths"
+},
+"Schematic: Lifelike Mechanical Toad": {
+"category": "Rare Drop",
+"dropChance": 0.0142
+},
+"Schematic: Thorium Rifle": {
+"category": "Rare Drop",
+"dropChance": 0.0029
+},
+"Schematic: Spellpower Goggles Xtreme Plus": {
+"category": "Boss Drop",
+"name": "Spitelash Siren",
+"zone": 16,
+"dropChance": 0.0097,
+"zone_name": "Azshara"
+},
+"Schematic: Masterwork Target Dummy": {
+"category": "Vendor",
+"name": "Xizzer Fizzbolt",
+"faction": "Both",
+"cost": 16000
+},
+"Schematic: Dark Iron Rifle": {
+"category": "Boss Drop",
+"name": "Doomforge Craftsman",
+"zone": 1584,
+"dropChance": 0.0317,
+"zone_name": "Blackrock Depths"
+},
+"Schematic: Thorium Shells": {
+"category": "Rare Drop",
+"dropChance": 0.0013
+},
+"Schematic: Delicate Arcanite Converter": {
+"category": "Vendor",
+"name": "Xizzer Fizzbolt",
+"faction": "Both",
+"cost": 20000
+},
+"Schematic: Master Engineer's Goggles": {
+"category": "Boss Drop",
+"name": "Doomforge Arcanasmith",
+"zone": 1584,
+"dropChance": 0.0086,
+"zone_name": "Blackrock Depths"
+},
+"Schematic: Arcanite Dragonling": {
+"category": "Boss Drop",
+"name": "Cobalt Mageweaver",
+"zone": 618,
+"dropChance": 0.0226,
+"zone_name": "Winterspring"
+},
+"Schematic: Dark Iron Bomb": {
+"category": "Boss Drop",
+"name": "Weapon Technician",
+"zone": 1584,
+"dropChance": 0.0189,
+"zone_name": "Blackrock Depths"
+},
+"Schematic: Arcane Bomb": {
+"category": "Rare Drop",
+"dropChance": 0.0078
+},
+"Schematic: Voice Amplification Modulator": {
+"category": "Boss Drop",
+"name": "Crimson Inquisitor",
+"zone": 2017,
+"dropChance": 0.037,
+"zone_name": "Stratholme"
+},
+"Schematic: Flawless Arcanite Rifle": {
+"category": "Boss Drop",
+"name": "Mossflayer Shadowhunter",
+"zone": 139,
+"dropChance": 0.0117,
+"zone_name": "Eastern Plaguelands"
+},
+"Formula: Runed Arcanite Rod": {
+"category": "Vendor",
+"name": "Lorelae Wintersong",
+"faction": "Both",
+"cost": 20900
+},
+"Recipe: Undermine Clam Chowder": {
+"category": "Vendor",
+"name": "Jabbey",
+"faction": "Both",
+"cost": 3000
+},
+"Pattern: Flarecore Mantle": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 144000
+},
+"Pattern: Flarecore Gloves": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 64000
+},
+"Pattern: Molten Helm": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 128000
+},
+"Pattern: Corehound Boots": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 120000
+},
+"Pattern: Black Dragonscale Boots": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 128000
+},
+"Plans: Fiery Chain Girdle": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 72000
+},
+"Plans: Dark Iron Leggings": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 144000
+},
+"Plans: Dark Iron Bracers": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 56000
+},
+"Plans: Fiery Chain Shoulders": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 160000
+},
+"Plans: Dark Iron Destroyer": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 176000
+},
+"Plans: Dark Iron Reaver": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 176000
+},
+"Recipe: Thistle Tea": {
+"category": "Vendor",
+"name": "Smudge Thunderwood",
+"faction": "Both",
+"cost": 200
+},
+"Pattern: Shadowskin Gloves": {
+"category": "Vendor",
+"name": "Rikqiz",
+"faction": "Both",
+"cost": 3500
+},
+"Pattern: Core Armor Kit": {
+"category": "Zone Drop",
+"zone": 2717,
+"dropChance": 0.0099,
+"zone_name": "Molten Core"
+},
+"Recipe: Major Rejuvenation Potion": {
+"category": "Zone Drop",
+"zone": 2717,
+"dropChance": 0.0102,
+"zone_name": "Molten Core"
+},
+"Plans: Elemental Sharpening Stone": {
+"category": "Zone Drop",
+"zone": 2717,
+"dropChance": 0.01,
+"zone_name": "Molten Core"
+},
+"Pattern: Flarecore Wraps": {
+"category": "Zone Drop",
+"zone": 2717,
+"dropChance": 0.0104,
+"zone_name": "Molten Core"
+},
+"Recipe: Runn Tum Tuber Surprise": {
+"category": "Boss Drop",
+"name": "Pusillin",
+"zone": 2557,
+"dropChance": 0.8307,
+"zone_name": "Dire Maul"
+},
+"Schematic: Biznicks 247x128 Accurascope": {
+"category": "Zone Drop",
+"zone": 2717,
+"dropChance": 0.0101,
+"zone_name": "Molten Core"
+},
+"Schematic: Force Reactive Disk": {
+"category": "Zone Drop",
+"zone": 2717,
+"dropChance": 0.01,
+"zone_name": "Molten Core"
+},
+"Schematic: Core Marksman Rifle": {
+"category": "Zone Drop",
+"zone": 2717,
+"dropChance": 0.0099,
+"zone_name": "Molten Core"
+},
+"Pattern: Mooncloth Robe": {
+"category": "Vendor",
+"name": "Shen'dralar Provisioner",
+"faction": "Both",
+"cost": 40000
+},
+"Plans: Sulfuron Hammer": {
+"category": "Quest",
+"quests": [
+"A Binding Contract"
+]
+},
+"Schematic: Red Firework": {
+"category": "Vendor",
+"name": "Sovik",
+"faction": "Horde",
+"cost": 1710
+},
+"Schematic: EZ-Thro Dynamite II": {
+"category": "Vendor",
+"name": "Blizrik Buckshot",
+"faction": "Both",
+"cost": 5000
+},
+"Schematic: Goblin Jumper Cables XL": {
+"category": "Boss Drop",
+"name": "Plugger Spazzring",
+"zone": 1584,
+"dropChance": 0.1672,
+"zone_name": "Blackrock Depths"
+},
+"Schematic: Gyrofreeze Ice Reflector": {
+"category": "Vendor",
+"name": "Xizzer Fizzbolt",
+"faction": "Both",
+"cost": 12000
+},
+"Schematic: Powerful Seaforium Charge": {
+"category": "Vendor",
+"name": "Xizzer Fizzbolt",
+"faction": "Both",
+"cost": 16000
+},
+"Schematic: Ultra-Flash Shadow Reflector": {
+"category": "Boss Drop",
+"name": "Crimson Inquisitor",
+"zone": 2017,
+"dropChance": 0.0354,
+"zone_name": "Stratholme"
+},
+"Schematic: Hyper-Radiant Flame Reflector": {
+"category": "Boss Drop",
+"name": "Solakar Flamewreath",
+"zone": 1583,
+"dropChance": 0.0805,
+"zone_name": "Blackrock Spire"
+},
+"Schematic: World Enlarger": {
+"category": "Boss Drop",
+"name": "Weapon Technician",
+"zone": 1584,
+"dropChance": 0.0382,
+"zone_name": "Blackrock Depths"
+},
+"Schematic: Snake Burst Firework": {
+"category": "Vendor",
+"name": "Zorbin Fandazzle",
+"faction": "Both",
+"cost": 5000
+},
+"Plans: Dark Iron Helm": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 48000
+},
+"Plans: Dark Iron Gauntlets": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 64000
+},
+"Plans: Black Amnesty": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 56000
+},
+"Plans: Blackguard": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 96000
+},
+"Plans: Blackfury": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 56000
+},
+"Plans: Ebon Hand": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 96000
+},
+"Plans: Nightfall": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 96000
+},
+"Pattern: Wisdom of the Timbermaw": {
+"category": "Vendor",
+"name": "Meilosh",
+"faction": "Both",
+"cost": 20900
+},
+"Pattern: Mantle of the Timbermaw": {
+"category": "Vendor",
+"name": "Meilosh",
+"faction": "Both",
+"cost": 38000
+},
+"Pattern: Flarecore Robe": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 48000
+},
+"Pattern: Flarecore Leggings": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 72000
+},
+"Pattern: Might of the Timbermaw": {
+"category": "Vendor",
+"name": "Meilosh",
+"faction": "Both",
+"cost": 20900
+},
+"Pattern: Timbermaw Brawlers": {
+"category": "Vendor",
+"name": "Meilosh",
+"faction": "Both",
+"cost": 38000
+},
+"Pattern: Chromatic Gauntlets": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 72000
+},
+"Pattern: Lava Belt": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 48000
+},
+"Pattern: Molten Belt": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 72000
+},
+"Pattern: Corehound Belt": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 72000
+},
+"Pattern: Bloodvine Vest": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Bloodvine Leggings": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Bloodvine Boots": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Primal Batskin Jerkin": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Primal Batskin Gloves": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Primal Batskin Bracers": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Blood Tiger Shoulders": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Blood Tiger Breastplate": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Plans: Bloodsoul Gauntlets": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Plans: Bloodsoul Breastplate": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Plans: Bloodsoul Shoulders": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Plans: Darksoul Breastplate": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Plans: Darksoul Leggings": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Plans: Darksoul Shoulders": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Schematic: Bloodvine Goggles": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 120000
+},
+"Schematic: Bloodvine Lens": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Recipe: Mageblood Elixir": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Recipe: Living Action Potion": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 50000
+},
+"Plans: Dark Iron Boots": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 64000
+},
+"Recipe: Heavy Crocolisk Stew": {
+"category": "Vendor",
+"name": "Ogg'marr",
+"faction": "Horde",
+"cost": 2000
+},
+"Pattern: Warbear Woolies": {
+"category": "Vendor",
+"name": "Meilosh",
+"faction": "Both",
+"cost": 19000
+},
+"Plans: Darkrune Helm": {
+"category": "Boss Drop",
+"name": "Cenarion Hold Infantry",
+"zone": 1377,
+"dropChance": 0.012,
+"zone_name": "Silithus"
+},
+"Pattern: Black Whelp Tunic": {
+"category": "Vendor",
+"name": "Amy Davenport",
+"faction": "Alliance",
+"cost": 1400
+},
+"Formula: Lesser Mana Oil": {
+"category": "Vendor",
+"name": "Kania",
+"faction": "Both",
+"cost": 10000
+},
+"Formula: Wizard Oil": {
+"category": "Vendor",
+"name": "Kania",
+"faction": "Both",
+"cost": 20000
+},
+"Formula: Brilliant Wizard Oil": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 40000
+},
+"Formula: Brilliant Mana Oil": {
+"category": "Vendor",
+"name": "Rin'wosho the Trader",
+"faction": "Both",
+"cost": 40000
+},
+"Recipe: Transmute Elemental Fire": {
+"category": "Vendor",
+"name": "Lokhtos Darkbargainer",
+"faction": "Both",
+"cost": 96000
+},
+"Recipe: Dirge's Kickin' Chimaerok Chops": {
+"category": "Quest",
+"quests": [
+"Dirge's Kickin' Chimaerok Chops"
+]
+},
+"Pattern: Soul Pouch": {
+"category": "Vendor",
+"name": "Vizzklick",
+"faction": "Both",
+"cost": 12000
+},
+"Pattern: Core Felcloth Bag": {
+"category": "Rare Drop",
+"dropChance": 0.0909
+},
+"Pattern: Stormshroud Gloves": {
+"category": "Rare Drop",
+"dropChance": 0.4303
+},
+"Pattern: Festival Suit": {
+"category": "Quest",
+"quests": [
+"Festive Recipes"
+]
+},
+"Pattern: Festival Dress": {
+"category": "Quest",
+"quests": [
+"Festive Recipes"
+]
+},
+"Schematic: Firework Launcher": {
+"category": "Quest",
+"quests": [
+"Firework Launcher"
+]
+},
+"Schematic: Cluster Launcher": {
+"category": "Quest",
+"quests": [
+"Cluster Launcher"
+]
+},
+"Plans: Jagged Obsidian Shield": {
+"category": "Vendor",
+"name": "Lieutenant General Andorov",
+"faction": "Both",
+"cost": 50000
+},
+"Plans: Black Grasp of the Destroyer": {
+"category": "Boss Drop",
+"name": "Moam",
+"zone": 3429,
+"dropChance": 0.1398,
+"zone_name": "Ruins of Ahn'Qiraj"
+},
+"Plans: Obsidian Mail Tunic": {
+"category": "Vendor",
+"name": "Lieutenant General Andorov",
+"faction": "Both",
+"cost": 80000
+},
+"Plans: Thick Obsidian Breastplate": {
+"category": "Boss Drop",
+"name": "The Prophet Skeram",
+"zone": 3428,
+"dropChance": 0.136,
+"zone_name": "Ahn'Qiraj"
+},
+"Pattern: Enchanted Runecloth Bag": {
+"category": "Vendor",
+"name": "Kania",
+"faction": "Both",
+"cost": 20000
+},
+"Pattern: Big Bag of Enchantment": {
+"category": "Boss Drop",
+"name": "Magister Kalendris",
+"zone": 2557,
+"dropChance": 0.0164,
+"zone_name": "Dire Maul"
+},
+"Pattern: Cenarion Herb Bag": {
+"category": "Vendor",
+"name": "Mishta",
+"faction": "Both",
+"cost": 20000
+},
+"Pattern: Satchel of Cenarius": {
+"category": "Vendor",
+"name": "Mishta",
+"faction": "Both",
+"cost": 50000
+},
+"Plans: Titanic Leggings": {
+"category": "Rare Drop",
+"dropChance": 0.0103
+},
+"Plans: Sageblade": {
+"category": "Rare Drop",
+"dropChance": 0.0075
+},
+"Plans: Persuader": {
+"category": "Rare Drop",
+"dropChance": 0.006
+},
+"Pattern: Gaea's Embrace": {
+"category": "Vendor",
+"name": "Mishta",
+"faction": "Both",
+"cost": 90000
+},
+"Schematic: Steam Tonk Controller": {
+"category": "Quest",
+"quests": [
+"40 Tickets - Schematic: Steam Tonk Controller"
+]
+},
+"Pattern: Sylvan Shoulders": {
+"category": "Vendor",
+"name": "Mishta",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Sylvan Crown": {
+"category": "Vendor",
+"name": "Mishta",
+"faction": "Both",
+"cost": 50000
+},
+"Pattern: Sylvan Vest": {
+"category": "Vendor",
+"name": "Mishta",
+"faction": "Both",
+"cost": 50000
+},
+"Recipe: Filet of Redgill": {
+"category": "Vendor",
+"name": "Kelsey Yance",
+"faction": "Both",
+"cost": 14400
+},
+"Pattern: Red Winter Clothes": {
+"category": "Vendor",
+"name": "Wulmort Jinglepocket",
+"faction": "Alliance",
+"cost": 5000
+},
+"Pattern: Green Winter Clothes": {
+"category": "Vendor",
+"name": "Penney Copperpinch",
+"faction": "Horde",
+"cost": 5000
+}
+}
+}
