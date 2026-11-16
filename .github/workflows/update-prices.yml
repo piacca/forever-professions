@@ -1,0 +1,89 @@
+# Hourly: fetch fresh Auction House prices, update the sales estimates, rebuild index.html,
+# and publish it to GitHub Pages. Nothing is committed, so the repo doesn't grow every hour.
+#
+# One-time setup (repository Settings):
+#   1. Secrets and variables -> Actions -> New repository secret:
+#        BLIZZARD_CLIENT_ID and BLIZZARD_CLIENT_SECRET  (from https://develop.battle.net/access/clients)
+#   2. Pages -> Build and deployment -> Source: "GitHub Actions"
+# Without the secrets, the workflow still publishes the page with the prices committed in data/.
+
+name: Update prices
+
+on:
+  schedule:
+    - cron: "17 * * * *"     # every hour at :17 (GitHub may run scheduled jobs a few minutes late)
+  workflow_dispatch:          # "Run workflow" button in the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-prices
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HAS_KEYS: ${{ secrets.BLIZZARD_CLIENT_ID != '' && secrets.BLIZZARD_CLIENT_SECRET != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Sales estimates compare each snapshot with the previous one, so keep that state between runs.
+      - name: Restore sales-tracking state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/ah-state-house*.json
+            data/ah-sales-house*.json
+          key: ah-state-${{ github.run_id }}
+          restore-keys: ah-state-
+
+      - name: Fetch Auction House prices
+        if: env.HAS_KEYS == 'true'
+        env:
+          BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+          BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+        run: |
+          for house in 113 114 120 124; do
+            python tools/fetch_ah_prices.py --house "$house" || echo "::warning::House $house failed; keeping its previous prices"
+          done
+
+      - name: Save sales-tracking state
+        if: env.HAS_KEYS == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            data/ah-state-house*.json
+            data/ah-sales-house*.json
+          key: ah-state-${{ github.run_id }}
+
+      - name: Build page
+        run: |
+          python tools/build_page.py
+          mkdir -p _site
+          cp index.html _site/index.html
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

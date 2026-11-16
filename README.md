@@ -44,6 +44,19 @@ python3 tools/build_page.py                    # put the data into index.html
 
 `fetch_ah_prices.py` takes `--region us|eu`, `--ruleset pvp|normal|rp|rppvp` and `--faction horde|alliance|blackwater`. `build_page.py --houses 113 114 120 124` chooses which snapshots appear in the market picker.
 
+## Auto-update (GitHub Actions)
+
+`.github/workflows/update-prices.yml` runs every hour. It fetches fresh AH prices for houses 113, 114, 120 and 124, updates the sales estimates, rebuilds the page and publishes it to GitHub Pages. It doesn't commit anything, so the repo doesn't grow. The sales-tracking state is kept between runs in the Actions cache. Running more often doesn't help: Blizzard refreshes Auction House data about once an hour.
+
+One-time setup, in the repository's **Settings**:
+
+1. **Secrets and variables → Actions → New repository secret:** add `BLIZZARD_CLIENT_ID` and `BLIZZARD_CLIENT_SECRET`.
+2. **Pages → Build and deployment → Source:** choose **GitHub Actions**.
+
+To run it straight away, open the **Actions** tab, choose **Update prices**, then **Run workflow**. Without the secrets it still publishes the page, using the prices committed in `data/`.
+
+GitHub pauses scheduled workflows in a public repo after 60 days with no commits. If that happens, re-enable it from the Actions tab.
+
 ## Where the data comes from
 
 | Data | Source |
